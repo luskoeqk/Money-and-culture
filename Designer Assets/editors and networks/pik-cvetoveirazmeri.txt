@@ -1,0 +1,19 @@
+Шрифтове:
+Sofia Sans Black 64 - zaglaviq
+Sofia Sans Black 20 - butoni
+Sofia Sans Regular 20 - paragrafi i menu
+Sofia Sans Italic 36 - podzaglaviq
+Sofia Sans Bold 16 - imena na kolgiqta
+Sofia Sans Regular 12 - maluk buton i footer texts
+Sofia Sans Italic 128 - godini na arhiv
+
+Цветове:
+
+#162123 - pik tumno zeleno
+#D0D9DB - pik svetlo zeleno
+#FFFFFF - belo
+
+Размери:
+
+320x48 - buton
+244x304 - kolegiq cards

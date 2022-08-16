@@ -1,0 +1,66 @@
+.wrapper {
+    /* border: 10px solid blue; */
+}
+
+
+.LatestEdition {
+    /* background-color: #111A1B; */
+    background-color: #d0d9db;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    text-transform: uppercase;
+
+
+    /* border: 5px solid #FFFF00; */
+    padding: 10px;
+
+
+}
+
+.CoverImage {
+    grid-row: span 2;
+    grid-column: span 2;
+    text-align: center;
+
+}
+
+
+img {
+    width: 70%;
+}
+
+.HeaderAndSubheader {
+    grid-column: span 3;
+    text-align: center;
+    color: #162123;
+}
+
+.Description {
+    grid-column: span 3;
+    border: 3px solid #162123;
+    border-radius: 15px;
+    text-align: center;
+    color: #162123;
+}
+
+.ReadMoreButton {
+    text-align: center;
+    grid-column-start: 4;
+}
+
+button {
+
+    font-size: 24px;
+    padding: 14px 40px;
+    border-radius: 15px;
+    background: #D0D9DB;
+    color: #111A1B;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background: #ceecf3;
+}
