@@ -1,7 +1,34 @@
-
-.FooterDiv{
+.FooterDivCopyRight {
     background-color: #d0d9db;
-    color: #162123; 
+    color: #162123;
     padding: 20px;
     text-align: center;
+}
+
+.FooterDivNavigation {
+    background-color: #162123;
+    text-align: center;
+    color: #d0d9db;
+    
+}
+
+.FooterLinks{
+    
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.FooterPikLogo {
+    max-width: 450px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.FooterItem{
+    /* border-top: 4px solid #d0d9db; */
+
 }

@@ -44,8 +44,8 @@ export const Image = styled.img`
     margin-right: auto;
     width: auto;
 
-    &:hover {
+    /* &:hover {
         transition: transform 0.7s;
         transform: scale(1.1);
-    }
+    } */
 `

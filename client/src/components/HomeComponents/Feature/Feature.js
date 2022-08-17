@@ -7,8 +7,8 @@ import {
     Button
 } from './FeatureElements'
 
-import img from '../../assets/Feature-Images/pk1.png'
-import logo from '../../assets/logo/pklogo.png'
+import img from '../../../assets/Feature-Images/pk1.png'
+import logo from '../../../assets/logo/pklogo.png'
 
 export const Feature = () => {
     return (

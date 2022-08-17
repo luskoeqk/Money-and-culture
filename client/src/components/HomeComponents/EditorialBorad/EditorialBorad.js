@@ -3,11 +3,11 @@ import React from 'react'
 import styles from "./EditorialBorad.module.css"
 import { EditorialBoradCard } from './EditorialBoradCard'
 
-import editor1 from '../../assets/TestEditorialImage/editor1.jpg'
-import editor2 from '../../assets/TestEditorialImage/editor2.jpg'
-import editor3 from '../../assets/TestEditorialImage/editor3.jpg'
-import editor4 from '../../assets/TestEditorialImage/editor4.jpg'
-import editor5 from '../../assets/TestEditorialImage/editor5.jpg'
+import editor1 from '../../../assets/TestEditorialImage/editor1.jpg'
+import editor2 from '../../../assets/TestEditorialImage/editor2.jpg'
+import editor3 from '../../../assets/TestEditorialImage/editor3.jpg'
+import editor4 from '../../../assets/TestEditorialImage/editor4.jpg'
+import editor5 from '../../../assets/TestEditorialImage/editor5.jpg'
 
 
 export const EditorialBorad = () => {

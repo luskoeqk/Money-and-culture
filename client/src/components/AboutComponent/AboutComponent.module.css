@@ -1,0 +1,26 @@
+.AboutComponentWrapper {
+    background-color: #d0d9db;
+    color: #162123;
+    padding: 40px;
+    justify-content: center;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    color: #162123;
+    margin: 50px;
+    border-top: 3px solid #162123;
+}
+
+@media only screen and (max-width: 1327px) {
+    .AboutComponentWrapper{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+}

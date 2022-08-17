@@ -12,10 +12,11 @@ export const Navbar = () => {
 
 
     let activeStyle = {
-        textDecoration: "underline",
-    };
+        transition: "0.2s",
+        borderBottom: "solid 3px #dfe8eb",
+        color: "#dfe8eb"
 
-    let activeClassName = "underline";
+    };
 
 
     return (
@@ -23,18 +24,46 @@ export const Navbar = () => {
             <Nav>
 
                 <H1>
-                    <NavLink to="/">
+                    <NavLink
+                        to="/"
+                        style={({ isActive }) =>
+                            isActive ? activeStyle : undefined
+                        }
+                    >
                         Начало
                     </NavLink>
                 </H1>
                 <H1>
-                    <NavLink to="about">
+                    <NavLink
+                        to="about"
+                        style={({ isActive }) =>
+                            isActive ? activeStyle : undefined
+                        }
+                    >
                         За списанието
                     </NavLink>
                 </H1>
                 <Image src={logo} alt="Пари и култура" />
-                <H1>Архив</H1>
-                <H1>Насоки за авторите</H1>
+                <H1>
+                    <NavLink
+                        to="archive"
+                        style={({ isActive }) =>
+                            isActive ? activeStyle : undefined
+                        }
+                    >
+                        Архив
+                    </NavLink>
+                </H1>
+                <H1>
+                    <NavLink
+                        to="for-authors"
+                        style={({ isActive }) =>
+                            isActive ? activeStyle : undefined
+                        }
+                    >
+                        Насоки за авторите
+                    </NavLink>
+                </H1>
 
             </Nav>
         </>
