@@ -16,6 +16,7 @@ import { About } from './pages/About';
 import { ForAuthors } from './pages/ForAuthors';
 import { Archive } from './pages/Archive';
 import { ScrollTop } from './components/ScrollTop';
+import { NotFound } from './pages/NotFound';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
                     <Route path="about" element={<About />} />
                     <Route path="for-authors" element={<ForAuthors />} />
                     <Route path="archive" element={<Archive />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
                 <ScrollTop />
                 <Footer />
