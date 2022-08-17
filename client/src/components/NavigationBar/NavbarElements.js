@@ -4,10 +4,13 @@ export const Nav = styled.nav`
     background: #162123;
     height: 80px;
     display: flex;
-    justify-content: space-between;
-    padding: 0.5rem calc((100vw - 1000px) / 2);
+    justify-content: center;
+    align-items: center;
+    /* padding: 0.5rem calc((100vw - 1000px) / 2); */
+    padding: 200px;
+    padding-bottom: 10px;
+    padding-top: 10px;    
     z-index: 10; 
-
 `
 
 export const H1 = styled.h3`
@@ -42,7 +45,7 @@ export const Image = styled.img`
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: auto;
+    width: 293px;
 
     /* &:hover {
         transition: transform 0.7s;
