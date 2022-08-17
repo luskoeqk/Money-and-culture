@@ -1,53 +1,38 @@
-.wrapper {
-    /* border: 10px solid blue; */
-}
-
-
-.LatestEdition {
-    /* background-color: #111A1B; */
+.LatestEditionWrapper {
     background-color: #d0d9db;
+    padding: 40px;
     display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     text-transform: uppercase;
-
-
-    /* border: 5px solid #FFFF00; */
-    padding: 10px;
-
-
-}
-
-.CoverImage {
-    grid-row: span 2;
-    grid-column: span 2;
-    text-align: center;
-
-}
-
-
-img {
-    width: 70%;
-}
-
-.HeaderAndSubheader {
-    grid-column: span 3;
-    text-align: center;
     color: #162123;
 }
 
+
+.LatestEditionImage {
+    text-align: center;
+}
+
+.LatestEditionInfo {
+    padding: 10px;
+    margin: 10px;
+}
+
+.HeaderAndSubheader {
+    text-align: center;
+}
+
 .Description {
-    grid-column: span 3;
     border: 3px solid #162123;
     border-radius: 15px;
     text-align: center;
     color: #162123;
+    padding: 15px;
 }
 
 .ReadMoreButton {
     text-align: center;
     grid-column-start: 4;
+    padding: 10px;
 }
 
 button {

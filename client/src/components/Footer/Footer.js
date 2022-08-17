@@ -3,8 +3,9 @@ import logoPik from '../../assets/logo/pklogo.png'
 import logoVUZF from '../../assets/logo/vuzflogo.png'
 
 import styles from './Footer.module.css'
-
 import styled from 'styled-components'
+
+import { Link } from 'react-router-dom'
 
 export const Footer = () => {
 
@@ -24,9 +25,13 @@ export const Footer = () => {
         gap: 15px;
     `
 
-    const StyledImg = styled.img`
+    const StyledImgVuzf = styled.img`
         max-width: 150px;
     `
+    const StyledImgPik = styled.img`
+        max-width: 350px;
+    `
+
 
     return (
         <>
@@ -38,17 +43,17 @@ export const Footer = () => {
             <div className={styles.FooterDivNavigation}>
                 <br />
                 <div className={styles.FooterPikLogo}>
-                    <img src={logoPik} alt="" />
+                    <StyledImgPik src={logoPik} alt="" />
                 </div>
                 <div className={styles.FooterLinks}>
 
                     <div className={styles.FooterItem}>
                         <StyledHr />
                         <StyledUl>
-                            <li>Начало</li>
-                            <li>За списанието</li>
-                            <li>Архив</li>
-                            <li>Насоки за авторите</li>
+                            <li><Link to="/">Начало</Link></li>
+                            <li><Link to="about">За списанието</Link></li>
+                            <li><Link to="archive">Архив</Link></li>
+                            <li><Link to="for-authors">Насоки за авторите</Link></li>
                         </StyledUl>
                     </div>
 
@@ -63,7 +68,7 @@ export const Footer = () => {
                     <div className={styles.FooterItem}>
                         <StyledHr />
                         <StyledUl>
-                            <li><StyledImg src={logoVUZF} alt="" /></li>
+                            <li><StyledImgVuzf src={logoVUZF} alt="" /></li>
                             <li>Висше училище по застраховане и финанси</li>
                         </StyledUl>
                     </div>

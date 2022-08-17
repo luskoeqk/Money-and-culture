@@ -15,22 +15,22 @@ import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { ForAuthors } from './pages/ForAuthors';
 import { Archive } from './pages/Archive';
+import { ScrollTop } from './components/ScrollTop';
 
 
 function App() {
     return (
         <div className="App">
 
-
             <BrowserRouter>
                 <Navbar />
-
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="about" element={<About />} />
                     <Route path="for-authors" element={<ForAuthors />} />
                     <Route path="archive" element={<Archive />} />
                 </Routes>
+                <ScrollTop />
                 <Footer />
             </BrowserRouter>
         </div>

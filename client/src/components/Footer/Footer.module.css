@@ -1,7 +1,7 @@
 .FooterDivCopyRight {
     background-color: #d0d9db;
     color: #162123;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
 }
 
@@ -21,7 +21,6 @@
 }
 
 .FooterPikLogo {
-    max-width: 450px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
