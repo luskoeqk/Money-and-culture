@@ -1,6 +1,6 @@
 import logo from '../../assets/logo/pklogo.png'
 
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 import {
     Nav,
@@ -43,7 +43,9 @@ export const Navbar = () => {
                         За списанието
                     </NavLink>
                 </H1>
-                <Image src={logo} alt="Пари и култура" />
+                <Link to="/">
+                    <Image src={logo} alt="Пари и култура" />
+                </Link>
                 <H1>
                     <NavLink
                         to="archive"
