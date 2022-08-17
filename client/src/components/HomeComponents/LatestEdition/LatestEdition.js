@@ -11,7 +11,7 @@ export const LatestEdition = () => {
         width: 300px;
     `
 
-    const styledPar = styled.p`
+    const StyledPar = styled.p`
         font-size: 12px;
     `
     return (
@@ -28,10 +28,10 @@ export const LatestEdition = () => {
                     <h2><i>Брой 1/2022</i></h2>
                 </div>
                 <div className={styles.Description}>
-                    <styledPar>Стратегическото управление в държавата</styledPar>
-                    <styledPar>оценка на факторите и ефективността на иновационната дейност и дигитализацията на банките в българия</styledPar>
-                    <styledPar>climate change as a challende for the economy</styledPar>
-                    <styledPar>дигитализацията като предпоставка за устойчиво развитие при мсп в българия</styledPar>
+                    <StyledPar>Стратегическото управление в държавата</StyledPar>
+                    <StyledPar>оценка на факторите и ефективността на иновационната дейност и дигитализацията на банките в българия</StyledPar>
+                    <StyledPar>climate change as a challende for the economy</StyledPar>
+                    <StyledPar>дигитализацията като предпоставка за устойчиво развитие при мсп в българия</StyledPar>
                 </div>
                 <div className={styles.ReadMoreButton}>
                     <button>ПРОЧЕТЕТЕ ТУК</button>|
