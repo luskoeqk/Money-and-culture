@@ -1,6 +1,11 @@
+import { ArchiveComponent } from "../components/ArchiveComponent/ArchiveComponent"
+
+
 
 export const Archive = () => {
   return (
-    <div>Archive</div>
+    <>
+      <ArchiveComponent />
+    </>
   )
 }
