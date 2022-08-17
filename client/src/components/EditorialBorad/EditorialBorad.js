@@ -19,7 +19,6 @@ export const EditorialBorad = () => {
             <EditorialBoradCard picture={editor3} title="проф. д-р Румен Трифонов"  hyperlink="https://vuzflab.eu/grigoriivazov/"/>
             <EditorialBoradCard picture={editor4} title="проф. д-р. Даниела Бобева"  hyperlink="https://vuzflab.eu/grigoriivazov/"/>
             <EditorialBoradCard picture={editor5} title="проф. д-р. Огняна Стоичкова"  hyperlink="https://vuzflab.eu/grigoriivazov/"/>
-
         </div>
     )
 }

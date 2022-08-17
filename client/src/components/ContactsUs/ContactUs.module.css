@@ -1,0 +1,29 @@
+
+
+.ContactUsWrapper{
+    background-color: #162123;
+    padding: 60px;
+}
+
+.ContactUsInnerWrapper{
+    display: flex;
+    border: 2px solid #d0d9db;
+    border-radius: 20px;
+    padding: 35px;
+}
+
+.ContactUsContactInfo{
+    padding: 40px;
+    text-align: left;
+    justify-content: center;
+    color: #d0d9db;
+}
+
+h1{
+    font-size: 60px;
+}
+
+a{
+    text-decoration: none;
+    color: #d0d9db;
+}

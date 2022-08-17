@@ -31,7 +31,7 @@ export const H1 = styled.h3`
         /* border-bottom: 1px solid black;
         padding-bottom: 5px; */
 
-        border-bottom: solid 3px #1E4F59;  
+        border-bottom: solid 3px #d0d9db;  
         /* transform: scaleX(1);  */
 }
 
