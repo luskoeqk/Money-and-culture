@@ -12,7 +12,7 @@ export const EditorialBoradCard = (
 
 
     return (
-        <div style={{ width: '245px' }}>
+        <div style={{ width: '300px' }}>
             <a style={{ textDecoration: 'none' }} href={props.hyperlink} target="_blank" rel="noreferrer">
                 <Card sx={{
                     // maxWidth: 345,

@@ -9,7 +9,6 @@ export const Home = () => {
         <>
             <Feature />
             <LatestEdition />
-            <br />
             <EditorialBorad />
             <ContactUs /> 
         </>

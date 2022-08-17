@@ -1,11 +1,12 @@
 
 
 .EditorialBorad{
+    justify-items: center;
     background-color: #162123;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
+    padding: 50px;
+    padding-left: auto;
+    padding-right: auto;
 }

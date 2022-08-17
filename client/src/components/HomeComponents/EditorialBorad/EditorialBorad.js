@@ -13,7 +13,6 @@ import editor5 from '../../../assets/TestEditorialImage/editor5.jpg'
 export const EditorialBorad = () => {
     return (
         <div className={styles.EditorialBorad}>
-            <br /> <br />
             <EditorialBoradCard picture={editor1} title="доц. д-р. Григорий Вазов"  hyperlink="https://vuzflab.eu/grigoriivazov/"/>
             <EditorialBoradCard picture={editor2} title="доц. д-р. Станислав Димитров"  hyperlink="https://vuzflab.eu/grigoriivazov/"/>
             <EditorialBoradCard picture={editor3} title="проф. д-р Румен Трифонов"  hyperlink="https://vuzflab.eu/grigoriivazov/"/>
