@@ -1,6 +1,7 @@
 import logo from '../../assets/logo/pklogo.png'
 
-import React from 'react'
+import { NavLink } from 'react-router-dom'
+
 import {
     Nav,
     H1,
@@ -9,12 +10,28 @@ import {
 
 export const Navbar = () => {
 
+
+    let activeStyle = {
+        textDecoration: "underline",
+    };
+
+    let activeClassName = "underline";
+
+
     return (
         <>
             <Nav>
-                
-                <H1>Начало</H1>
-                <H1>За списанието</H1>
+
+                <H1>
+                    <NavLink to="/">
+                        Начало
+                    </NavLink>
+                </H1>
+                <H1>
+                    <NavLink to="about">
+                        За списанието
+                    </NavLink>
+                </H1>
                 <Image src={logo} alt="Пари и култура" />
                 <H1>Архив</H1>
                 <H1>Насоки за авторите</H1>

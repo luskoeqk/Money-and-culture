@@ -1,6 +1,6 @@
 import React from 'react'
 
-import cover from '../../assets/editions/korica4-01.jpg'
+import cover from '../../../assets/editions/korica4-01.jpg'
 
 import styles from "./LatestEdition.module.css";
 
