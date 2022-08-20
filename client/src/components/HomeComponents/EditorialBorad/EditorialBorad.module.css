@@ -1,12 +1,16 @@
-
-
-.EditorialBorad{
+.EditorialBorad {
     justify-items: center;
     background-color: #162123;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
     padding: 50px;
     padding-left: auto;
     padding-right: auto;
+}
+
+.EditorialBoradCards {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 0 auto;
+    width: 60%;
 }

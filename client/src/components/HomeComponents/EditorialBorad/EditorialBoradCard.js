@@ -12,12 +12,12 @@ export const EditorialBoradCard = (
 
 
     return (
-        <div style={{ width: '300px' }}>
+        <div style={{ width: '250px' }}>
             <a style={{ textDecoration: 'none' }} href={props.hyperlink} target="_blank" rel="noreferrer">
                 <Card sx={{
                     // maxWidth: 345,
                     textAlign: 'center',
-                    border: '1px solid white',
+                    border: '3px solid white',
                     borderRadius: '25px',
                     backgroundColor: '#d0d9db',
                 }}>
@@ -26,7 +26,7 @@ export const EditorialBoradCard = (
                         <CardMedia
 
                             component="img"
-                            height="340"
+                            height="300"
                             image={props.picture}
                             alt={''}
 
