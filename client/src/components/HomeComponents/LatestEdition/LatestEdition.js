@@ -5,15 +5,18 @@ import cover from '../../../assets/editions/korica4-01.jpg'
 import styles from "./LatestEdition.module.css";
 import styled from 'styled-components'
 
+import { Link } from 'react-router-dom'
+
+const StyledImg = styled.img`
+    width: 400px;
+    `
+
+const StyledPar = styled.p`
+    font-size: 24px;
+    `
+
 export const LatestEdition = () => {
 
-    const StyledImg = styled.img`
-        width: 300px;
-    `
-
-    const StyledPar = styled.p`
-        font-size: 12px;
-    `
     return (
 
 
@@ -34,7 +37,9 @@ export const LatestEdition = () => {
                     <StyledPar>дигитализацията като предпоставка за устойчиво развитие при мсп в българия</StyledPar>
                 </div>
                 <div className={styles.ReadMoreButton}>
-                    <button>ПРОЧЕТЕТЕ ТУК</button>|
+                    <Link to='archive'>
+                        <button>ПРОЧЕТЕТЕ ТУК</button>|
+                    </Link>
                 </div>
             </div>
         </div>

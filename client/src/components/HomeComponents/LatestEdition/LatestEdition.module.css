@@ -10,6 +10,9 @@
 
 .LatestEditionImage {
     text-align: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .LatestEditionInfo {
@@ -32,7 +35,7 @@
 .ReadMoreButton {
     text-align: center;
     grid-column-start: 4;
-    padding: 10px;
+    padding-top: 20px;
 }
 
 button {

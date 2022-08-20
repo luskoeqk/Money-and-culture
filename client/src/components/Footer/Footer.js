@@ -7,31 +7,31 @@ import styled from 'styled-components'
 
 import { Link } from 'react-router-dom'
 
+
+const StyledHr = styled.hr`
+    border-top: 4px solid #d0d9db;
+    border-bottom: none;
+    width: auto;
+`
+
+const StyledUl = styled.ul`
+    list-style-type: none;
+    padding: 5px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+`
+
+const StyledImgVuzf = styled.img`
+    max-width: 150px;
+`
+const StyledImgPik = styled.img`
+    max-width: 350px;
+`
+
+
 export const Footer = () => {
-
-
-    const StyledHr = styled.hr`
-        border-top: 4px solid #d0d9db;
-        border-bottom: none;
-        width: auto;
-    `
-
-    const StyledUl = styled.ul`
-        list-style-type: none;
-        padding: 5px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    `
-
-    const StyledImgVuzf = styled.img`
-        max-width: 150px;
-    `
-    const StyledImgPik = styled.img`
-        max-width: 350px;
-    `
-
 
     return (
         <>
