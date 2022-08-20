@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React from 'react'
 
 import styles from './ContactUs.module.css'
@@ -18,7 +19,6 @@ export const ContactUs = () => {
                             marginHeight={0}
                             marginWidth={0}
                         />
-                        <a href="https://123movies-to.org" />
                         <br />
                         <style
                             dangerouslySetInnerHTML={{
@@ -42,7 +42,7 @@ export const ContactUs = () => {
                         <li>София 1618 <br /> ул. „Гусла No1 (кв. „Овча Купел”) <br /> Висше училище по застраховане и финанси <br /> ст. 405</li>
                         <li>00359 2 40 80 15</li>
                         <li><a href="mailto:pariikultura@vuzf.bg?">pariikultura@vuzf.bg</a></li>
-                        
+
                     </ul>
                 </div>
 
