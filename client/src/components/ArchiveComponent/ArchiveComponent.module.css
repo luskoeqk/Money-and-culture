@@ -5,7 +5,7 @@
     padding: auto;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    border: 1px solid black;
+    border: 2px solid #162123;
     border-radius: 15px;
 }
 

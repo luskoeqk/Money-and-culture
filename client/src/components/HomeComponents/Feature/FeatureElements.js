@@ -19,6 +19,7 @@ export const Logo = styled.img`
 
 export const Paragraph = styled.p`
         position: absolute;
+        text-align: center;
         top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);

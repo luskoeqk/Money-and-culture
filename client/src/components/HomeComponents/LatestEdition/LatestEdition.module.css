@@ -37,18 +37,3 @@
     grid-column-start: 4;
     padding-top: 20px;
 }
-
-button {
-
-    font-size: 24px;
-    padding: 14px 40px;
-    border-radius: 15px;
-    background: #D0D9DB;
-    color: #111A1B;
-    cursor: pointer;
-
-}
-
-button:hover {
-    background: #ceecf3;
-}

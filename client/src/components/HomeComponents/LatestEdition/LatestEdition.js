@@ -9,11 +9,24 @@ import { Link } from 'react-router-dom'
 
 const StyledImg = styled.img`
     width: 400px;
-    `
+`
 
 const StyledPar = styled.p`
     font-size: 24px;
-    `
+`
+const Button = styled.button`
+    font-size: 24px;
+    padding: 14px 40px;
+    border-radius: 15px;
+    background: #111A1B;
+    color: #D0D9DB;
+    cursor: pointer;
+
+    &:hover {
+        background: #111a1bc7;
+    }
+`
+
 
 export const LatestEdition = () => {
 
@@ -38,45 +51,10 @@ export const LatestEdition = () => {
                 </div>
                 <div className={styles.ReadMoreButton}>
                     <Link to='archive'>
-                        <button>ПРОЧЕТЕТЕ ТУК</button>|
+                        <Button>ПРОЧЕТЕТЕ ТУК</Button>|
                     </Link>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-        // <div className={styles.wrapper}>
-
-        //     <div className={styles.LatestEdition}>
-
-        //         <div className={styles.CoverImage}>
-        //             <img src={cover} alt="" />
-        //         </div>
-
-        //         <div className={styles.HeaderAndSubheader}>
-        //             <h1><strong>Пари и култура</strong></h1>
-        //             <h2><i>Брой 1/2022</i></h2>
-        //         </div>
-
-        //         <div className={styles.Description}>
-
-        //             <p>Стратегическото управление в държавата</p>
-        //             <p>оценка на факторите и ефективността на иновационната дейност и дигитализацията на банките в българия</p>
-        //             <p>climate change as a challende for the economy</p>
-        //             <p>дигитализацията като предпоставка за устойчиво развитие при мсп в българия</p>
-        //         </div>
-
-        //         <div className={styles.ReadMoreButton}>
-        //             <button>ПРОЧЕТЕТЕ ТУК</button>
-        //         </div>
-
-        //     </div>
-        // </div>
-
     )
 }

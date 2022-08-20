@@ -33,7 +33,6 @@ export const ArchiveComponent = () => {
 
             console.log(err);
         };
-        console.log('useffect');
     }, [])
 
 
