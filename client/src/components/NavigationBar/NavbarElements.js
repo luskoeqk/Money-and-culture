@@ -8,6 +8,9 @@ export const Nav = styled.nav`
     align-items: center;
     /* padding: 0.5rem calc((100vw - 1000px) / 2); */
     padding: 200px;
+    margin: 0 auto;
+    width: auto;
+    padding-left: 250px;
     padding-bottom: 10px;
     padding-top: 10px;    
     z-index: 10; 

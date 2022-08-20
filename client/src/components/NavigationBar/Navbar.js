@@ -13,8 +13,9 @@ export const Navbar = () => {
 
     let activeStyle = {
         transition: "0.2s",
-        borderBottom: "solid 3px #dfe8eb",
-        color: "#dfe8eb"
+        borderBottom: "solid 3px #A0A0A0",
+        // color: "#dfe8eb"
+        color: "#A0A0A0"
 
     };
 
