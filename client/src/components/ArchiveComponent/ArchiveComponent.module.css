@@ -1,5 +1,24 @@
 
 
+.ArchiveComponentCards{
+    display: grid;
+    padding: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+
+.ArchiveComponentCard{
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .ArchiveComponentDiv{
-    
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -4,10 +4,9 @@ import styles from './ArchiveComponent.module.css';
 import { useEffect, useState } from 'react'
 
 import { firestoreFirebase } from '../../firebase'
-
 import { collection } from "firebase/firestore";
+import { getDocs } from "firebase/firestore";
 
-import { doc, getDocs } from "firebase/firestore";
 
 export const ArchiveComponent = () => {
 
@@ -26,7 +25,7 @@ export const ArchiveComponent = () => {
                     list.push({ id: doc.id, ...doc.data() });
                 });
                 setIframes(list)
-                console.log('list: ', list);
+                // console.log('list: ', list);
             }
 
             fetchData();
@@ -34,16 +33,20 @@ export const ArchiveComponent = () => {
 
             console.log(err);
         };
+        console.log('useffect');
     }, [])
 
 
 
     return (
         <div className={styles.ArchiveComponentDiv}>
-            <div>
-                {iframes.map(iframe => <p key={iframe.id}>
-                    {iframe.iframe}
-                </p>)}
+            <div className={styles.ArchiveComponentCards}>
+                {iframes.map(iframe =>
+                    <div className={styles.ArchiveComponentCard} key={iframe.id}
+                        dangerouslySetInnerHTML={
+                            { __html: iframe.iframe }
+                        }>
+                    </div>)}
             </div>
         </div>
     )

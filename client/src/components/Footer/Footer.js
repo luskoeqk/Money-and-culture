@@ -68,8 +68,11 @@ export const Footer = () => {
                     <div className={styles.FooterItem}>
                         <StyledHr />
                         <StyledUl>
-                            <li><StyledImgVuzf src={logoVUZF} alt="" /></li>
-                            <li>Висше училище по застраховане и финанси</li>
+                            <a href="http://vuzf.bg" target="_blank" rel="noreferrer">
+                                <li><StyledImgVuzf src={logoVUZF} alt="" /></li>
+                                <li>Висше училище по застраховане и финанси</li>
+
+                            </a>
                         </StyledUl>
                     </div>
                 </div>
