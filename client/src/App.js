@@ -31,7 +31,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="about" element={<About />} />
-                    <Route path="for-authors" element={<ForAuthors />} />
+                    <Route path="authors" element={<ForAuthors />} />
                     <Route path="archive" element={<Archive />} />
                     <Route path="terms" element={<GeneralTerms />} />
                     <Route path="policy" element={<Policy />} />

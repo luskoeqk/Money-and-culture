@@ -64,7 +64,7 @@ export const Footer = () => {
                             <li><Link to="/">Начало</Link></li>
                             <li><Link to="about">За списанието</Link></li>
                             <li><Link to="archive">Архив</Link></li>
-                            <li><Link to="for-authors">Насоки за авторите</Link></li>
+                            <li><Link to="authors">Насоки за авторите</Link></li>
                         </StyledUl>
                     </div>
 

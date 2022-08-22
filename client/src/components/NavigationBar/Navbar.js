@@ -58,7 +58,7 @@ export const Navbar = () => {
                 </H1>
                 <H1>
                     <NavLink
-                        to="for-authors"
+                        to="authors"
                         style={({ isActive }) =>
                             isActive ? activeStyle : undefined
                         }
