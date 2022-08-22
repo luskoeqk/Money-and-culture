@@ -8,10 +8,6 @@
     padding-right: 400px;
 }
 
-h1 {
-    text-align: center;
-}
-
 
 h2{
     text-align: center;
@@ -33,10 +29,39 @@ hr {
     border-top: 3px solid #162123;
 }
 
-@media only screen and (max-width: 1327px) {
-    .AboutComponentWrapper{
+
+@media all and (max-width: 1440px) {
+    .ForAuthWrapper {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+}
+
+
+@media all and (max-width: 1024px) {
+    .ForAuthWrapper {
         padding-left: 100px;
         padding-right: 100px;
     }
 
-}
+    h1{
+        font-size: 40px;
+    }
+}   
+
+
+@media all and (max-width: 768px) {
+    .ForAuthWrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}   
+
+
+
+@media all and (max-width: 425px) {
+    .ForAuthWrapper {
+        padding-left: auto;
+        padding-right: auto;
+    }
+}   

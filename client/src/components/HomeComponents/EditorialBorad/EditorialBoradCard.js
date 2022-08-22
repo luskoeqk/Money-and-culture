@@ -29,7 +29,6 @@ export const EditorialBoradCard = (
                             height="300"
                             image={props.picture}
                             alt={''}
-
                         />
                         <CardContent >
                             <Typography gutterBottom variant="h6" component="div">

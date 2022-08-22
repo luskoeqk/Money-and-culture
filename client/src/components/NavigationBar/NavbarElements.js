@@ -14,6 +14,14 @@ export const Nav = styled.nav`
     padding-bottom: 10px;
     padding-top: 10px;    
     z-index: 10; 
+
+    @media all and (max-width: 880px) {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        height: 500px;
+        padding: 10px;
+        width: auto;
+    }
 `
 
 export const H1 = styled.h3`
@@ -24,24 +32,14 @@ export const H1 = styled.h3`
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    
-
 
     
     &:hover {
         transition: 0.2s;
-        /* color: #9FA8AA; */
         cursor: pointer;
-        
-        /* text-decoration: underline; */
-        /* border-bottom: 1px solid black;
-        padding-bottom: 5px; */
-
         border-bottom: solid 3px #d0d9db;  
-        /* transform: scaleX(1);  */
-}
-
-
+    }
+    
 `
 
 export const Image = styled.img`
@@ -54,4 +52,9 @@ export const Image = styled.img`
         transition: transform 0.7s;
         transform: scale(1.1);
     } */
+
+    @media all and (max-width: 700px) {
+        max-width: 200px;
+        width: auto;
+    }
 `

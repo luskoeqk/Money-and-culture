@@ -1,29 +1,45 @@
-
-
-.ContactUsWrapper{
+.ContactUsWrapper {
     background-color: #162123;
     padding: 60px;
 }
 
-.ContactUsInnerWrapper{
+.ContactUsInnerWrapper {
     display: flex;
     border: 2px solid #d0d9db;
     border-radius: 20px;
     padding: 35px;
 }
 
-.ContactUsContactInfo{
+.ContactUsContactInfo {
     padding: 40px;
     text-align: left;
     justify-content: center;
     color: #d0d9db;
 }
 
-h1{
-    font-size: 60px;
-}
-
-a{
+a {
     text-decoration: none;
     color: #d0d9db;
+}
+
+.ContactUsIFrame{
+
+}
+
+@media all and (max-width: 880px) {
+    .ContactUsWrapper {
+        background-color: #162123;
+        padding: 10px;
+    }
+
+    .ContactUsInnerWrapper {
+        display: block;
+        border: 2px solid #d0d9db;
+        border-radius: 20px;
+        padding: 35px;
+    }
+
+    iframe {
+        width: auto;
+    }
 }

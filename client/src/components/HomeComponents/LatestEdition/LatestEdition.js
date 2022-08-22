@@ -9,10 +9,20 @@ import { Link } from 'react-router-dom'
 
 const StyledImg = styled.img`
     width: 400px;
+
+    @media all and (max-width: 880px) {
+        max-width: 300px;
+        width: auto;
+    }
 `
 
 const StyledPar = styled.p`
     font-size: 24px;
+
+    @media all and (max-width: 880px) {
+        font-size: 18px;
+    }
+
 `
 const Button = styled.button`
     font-size: 24px;
@@ -25,6 +35,11 @@ const Button = styled.button`
     &:hover {
         background: #111a1bc7;
     }
+
+    @media all and (max-width: 880px) {
+        font-size: 18px;
+    }
+
 `
 
 
@@ -51,7 +66,7 @@ export const LatestEdition = () => {
                 </div>
                 <div className={styles.ReadMoreButton}>
                     <Link to='archive'>
-                        <Button>ПРОЧЕТЕТЕ ТУК</Button>|
+                        <Button>ПРОЧЕТЕТЕ ТУК</Button>
                     </Link>
                 </div>
             </div>

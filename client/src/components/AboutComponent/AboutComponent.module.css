@@ -7,9 +7,6 @@
     padding-right: 400px;
 }
 
-h1 {
-    text-align: center;
-}
 
 hr {
     color: #162123;
@@ -17,10 +14,20 @@ hr {
     border-top: 3px solid #162123;
 }
 
+
+@media all and (max-width: 768px) {
+    .AboutComponentWrapper{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/* 
 @media only screen and (max-width: 1327px) {
     .AboutComponentWrapper{
         padding-left: 100px;
         padding-right: 100px;
-    }
+    } 
 
 }
+*/

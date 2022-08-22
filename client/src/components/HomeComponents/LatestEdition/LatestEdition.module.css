@@ -37,3 +37,14 @@
     grid-column-start: 4;
     padding-top: 20px;
 }
+
+
+@media all and (max-width: 880px) {
+    .LatestEditionWrapper {
+        display: block;
+    }
+
+    .LatestEditionImage {
+        padding: 0px;
+    }
+}

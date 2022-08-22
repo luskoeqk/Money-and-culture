@@ -1,11 +1,9 @@
 import styled from "styled-components";
+import img from '../../../assets/Feature-Images/pk1.png'
 
 export const Image = styled.img`
             width: 100%;
             max-height: 90vh;
-            /* margin: auto; */
-            /* display: grid; */
-            /* height: 100%; */
 `
 
 export const Logo = styled.img`
@@ -15,6 +13,9 @@ export const Logo = styled.img`
         width: auto;
         transform: translate(-50%, -50%);
         
+        @media all and (max-width: 880px){
+                width: 0px;
+        }
 `
 
 export const Paragraph = styled.p`
@@ -25,6 +26,13 @@ export const Paragraph = styled.p`
         transform: translate(-50%, -50%);
         color: white;
         font-size: 17px;
+
+        @media all and (max-width: 880px){
+                position: absolute;
+                font-size: 13px;
+                width: 90%;
+                top: 80%;
+        }
 `
 
 export const Button = styled.button`
@@ -43,4 +51,14 @@ export const Button = styled.button`
         &:hover {
             background-color: #F8F8FF;
         }
+
+        
+        @media all and (max-width: 880px){
+                font-size: 10px;
+
+        }
+`
+
+export const Wrapper = styled.div`
+        background-image: url(${img});
 `

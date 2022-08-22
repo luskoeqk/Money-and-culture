@@ -7,35 +7,14 @@ export const ContactUs = () => {
     return (
         <div className={styles.ContactUsWrapper}>
             <div className={styles.ContactUsInnerWrapper}>
-                <div className="mapouter">
-                    <div className="gmap_canvas">
-                        <iframe
-                            width={752}
-                            height={445}
-                            id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=VUZF&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            frameBorder={0}
-                            scrolling="no"
-                            marginHeight={0}
-                            marginWidth={0}
-                        />
-                        <br />
-                        <style
-                            dangerouslySetInnerHTML={{
-                                __html:
-                                    ".mapouter{position:relative;text-align:right;height:445px;width:752px;}"
-                            }}
-                        />
-                        <a href="https://www.embedgooglemap.net">get google map link</a>
-                        <style
-                            dangerouslySetInnerHTML={{
-                                __html:
-                                    ".gmap_canvas {overflow:hidden;background:none!important;height:445px;width:752px;}"
-                            }}
-                        />
-                    </div>
+                <div className={styles.ContactUsIFrame}>
+                    <iframe
+                        width={752}
+                        height={445}
+                        src="https://maps.google.com/maps?q=VUZF&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameBorder={0}
+                    />
                 </div>
-
                 <div className={styles.ContactUsContactInfo}>
                     <h1><strong>КОНТАКТИ</strong></h1>
                     <ul>
