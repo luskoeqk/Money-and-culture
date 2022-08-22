@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom'
 const StyledHr = styled.hr`
     border-top: 4px solid #d0d9db;
     border-bottom: none;
+    min-width: 45px;
     width: auto;
 `
 
@@ -20,11 +21,21 @@ const StyledUl = styled.ul`
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+    max-width: 40%;
+    
+    @media all and (max-width: 880px) {
+        font-size: 12px;
+    }
+
 `
 
 const StyledImgVuzf = styled.img`
     max-width: 150px;
+
+    @media all and (max-width: 880px) {
+        max-width: 60px;
+    }
 `
 const StyledImgPik = styled.img`
     max-width: 350px;
