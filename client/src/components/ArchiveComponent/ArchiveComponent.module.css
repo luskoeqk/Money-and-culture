@@ -1,5 +1,5 @@
 .ArchiveComponentCards {
-    padding: 30px;   
+    padding: 30px;
 }
 
 
@@ -22,32 +22,39 @@
     border-radius: 15px;
     justify-content: center;
     justify-items: center;
+    background-color: #d0d9db;
 }
 
 
-.ArchiveComponentWrapper{
+.ArchiveComponentWrapper {
     padding: 30px;
     padding-top: 50px;
 }
 
-@media all and (max-width: 880px) {
+@media screen and (max-width: 480px) {
     .ArchiveComponentCards {
         padding: 0px;
     }
 
     .ArchiveComponentCard {
-        padding: auto;
+        /* padding: auto; */
         width: 70%;
     }
 
     .ArchiveComponentDiv {
         padding: 10px;
         display: block;
-        padding: auto;
+        padding: 0;
         justify-items: space-between;
     }
 
-    iframe{
+    iframe {
         height: 400px;
+    }
+
+    .ArchiveComponentWrapper {
+        padding: 10px;
+        justify-items: center;
+        text-align: center;
     }
 }

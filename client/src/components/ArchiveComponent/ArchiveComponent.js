@@ -33,7 +33,7 @@ export const ArchiveComponent = () => {
                     list.push({ id: doc.id, ...doc.data() });
                 });
                 setIframes(list)
-                console.log('list: ', list);
+                // console.log('list: ', list);
             }
 
             fetchData();

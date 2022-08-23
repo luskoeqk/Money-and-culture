@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  margin-right: auto;
   font-family: 'Noto Serif HK', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

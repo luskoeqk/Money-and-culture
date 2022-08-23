@@ -31,7 +31,7 @@ export const Paragraph = styled.p`
                 position: absolute;
                 font-size: 13px;
                 width: 90%;
-                top: 80%;
+                top: 85%;
         }
 `
 
@@ -55,7 +55,7 @@ export const Button = styled.button`
         
         @media all and (max-width: 880px){
                 font-size: 10px;
-
+                top: 105vh;
         }
 `
 

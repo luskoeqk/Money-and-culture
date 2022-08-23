@@ -17,10 +17,10 @@ export const Nav = styled.nav`
 
     @media all and (max-width: 880px) {
         display: grid;
-        grid-template-rows: repeat(5, 1fr);
+        /* grid-template-rows: repeat(5, 1fr); */
         height: 500px;
-        padding: 10px;
-        width: auto;
+        padding: 0px;
+        margin: 0px;
     }
 `
 
