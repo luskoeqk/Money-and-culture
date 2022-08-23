@@ -1,9 +1,9 @@
+import { PolicyComponent } from "../components/PolicyComponent/PolicyComponent"
 
 export const Policy = () => {
     return (
-        <div>
-            <h1>Политика за поверителност и защита на личните данни</h1>
-            <h2>Техническа редакция.</h2>
-        </div>
+        <>
+            <PolicyComponent />
+        </>
     )
 }

@@ -1,5 +1,5 @@
 import { ContactUs } from "../components/HomeComponents/ContactsUs/ContactUs"
-import { EditorialBorad } from "../components/HomeComponents/EditorialBorad/EditorialBorad"
+import { EditorialBoard } from "../components/HomeComponents/EditorialBorad/EditorialBoard"
 import { Feature } from "../components/HomeComponents/Feature/Feature"
 import { LatestEdition } from "../components/HomeComponents/LatestEdition/LatestEdition"
 
@@ -9,8 +9,8 @@ export const Home = () => {
         <>
             <Feature />
             <LatestEdition />
-            <EditorialBorad />
-            <ContactUs /> 
+            <EditorialBoard />
+            <ContactUs />   
         </>
     )
 }

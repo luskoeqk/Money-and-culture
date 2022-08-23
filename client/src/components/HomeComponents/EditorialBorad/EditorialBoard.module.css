@@ -1,4 +1,4 @@
-.EditorialBorad {
+.EditorialBoard {
     justify-items: center;
     background-color: #162123;
     padding: 50px;
@@ -6,7 +6,7 @@
     padding-right: auto;
 }
 
-.EditorialBoradCards {
+.EditorialBoardCards {
     padding: 20px;
     display: grid;
     justify-items: center;
@@ -24,14 +24,18 @@ button:hover{
 
 @media all and (max-width: 880px) {
 
-    .EditorialBoradCards{
+    .EditorialBoardCards{
         display: block;
         padding: 0px;
-        justify-content: space-between;
-        padding-top: 15px;
     }
 
-    .EditorialBorad{
+    .EditorialBoard{
         padding: 0px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .EditorialBoardCard{
+        padding-top: 20px;
     }
 }

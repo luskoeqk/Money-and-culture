@@ -9,10 +9,10 @@
     background-color: #162123;
     text-align: center;
     color: #d0d9db;
-    
+
 }
 
-.FooterLinks{
+.FooterLinks {
     padding: 20px;
     display: grid;
     justify-content: center;
@@ -25,8 +25,9 @@
     margin-right: auto;
 }
 
+.FooterWrapper {}
 
-.FooterItem{
+.FooterItem {
     /* border-top: 4px solid #d0d9db; */
 
 }

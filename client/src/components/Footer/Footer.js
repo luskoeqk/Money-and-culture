@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 const StyledHr = styled.hr`
     border-top: 4px solid #d0d9db;
     border-bottom: none;
-    min-width: 45px;
+    min-width: 35px;
     width: auto;
 `
 
@@ -45,7 +45,7 @@ const StyledImgPik = styled.img`
 export const Footer = () => {
 
     return (
-        <>
+        <div className={styles.FooterWrapper}>
             <div className={styles.FooterDivCopyRight}>
                 <p>Copyright 2020</p>
                 <p>Висше училище по застраховане и финанси</p>
@@ -54,7 +54,9 @@ export const Footer = () => {
             <div className={styles.FooterDivNavigation}>
                 <br />
                 <div className={styles.FooterPikLogo}>
-                    <StyledImgPik src={logoPik} alt="" />
+                    <Link to="/">
+                        <StyledImgPik src={logoPik} alt="" />
+                    </Link>
                 </div>
                 <div className={styles.FooterLinks}>
 
@@ -87,7 +89,7 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
 
     )
 }

@@ -6,16 +6,19 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-export const EditorialBoradCard = (
+import styles from './EditorialBoard.module.css'
+
+export const EditorialBoardCard = (
     props
 ) => {
 
 
     return (
-        <div style={{ width: '250px' }}>
+        <div className={styles.EditorialBoardCard} style={{ width: '225px' }}>
             <a style={{ textDecoration: 'none' }} href={props.hyperlink} target="_blank" rel="noreferrer">
                 <Card sx={{
-                    // maxWidth: 345,
+                    maxWidth: 225,
+                    maxHeight: 407,
                     textAlign: 'center',
                     border: '3px solid white',
                     borderRadius: '25px',

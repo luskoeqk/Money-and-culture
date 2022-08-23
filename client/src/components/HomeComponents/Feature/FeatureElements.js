@@ -2,8 +2,8 @@ import styled from "styled-components";
 import img from '../../../assets/Feature-Images/pk1.png'
 
 export const Image = styled.img`
-            width: 100%;
-            max-height: 90vh;
+        width: 100%;
+        max-height: 90vh;
 `
 
 export const Logo = styled.img`
@@ -31,7 +31,7 @@ export const Paragraph = styled.p`
                 position: absolute;
                 font-size: 13px;
                 width: 90%;
-                top: 85%;
+                top: 70%;
         }
 `
 
@@ -55,7 +55,7 @@ export const Button = styled.button`
         
         @media all and (max-width: 880px){
                 font-size: 10px;
-                top: 105vh;
+                top: 80vh;
         }
 `
 
