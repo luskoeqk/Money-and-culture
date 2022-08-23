@@ -1,24 +1,53 @@
+.ArchiveComponentCards {
+    padding: 30px;   
+}
 
 
-.ArchiveComponentCards{
+.ArchiveComponentCard {
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.ArchiveComponentDiv {
+    padding: 200px;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
-    padding: auto;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
     border: 2px solid #162123;
     border-radius: 15px;
+    justify-content: center;
+    justify-items: center;
 }
 
 
-.ArchiveComponentCard{
+.ArchiveComponentWrapper{
     padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 50px;
 }
 
+@media all and (max-width: 880px) {
+    .ArchiveComponentCards {
+        padding: 0px;
+    }
 
-.ArchiveComponentDiv{
-    padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    .ArchiveComponentCard {
+        padding: auto;
+        width: 70%;
+    }
+
+    .ArchiveComponentDiv {
+        padding: 10px;
+        display: block;
+        padding: auto;
+        justify-items: space-between;
+    }
+
+    iframe{
+        height: 400px;
+    }
 }
