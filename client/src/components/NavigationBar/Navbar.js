@@ -2,6 +2,7 @@ import logo from '../../assets/logo/pklogo.png'
 
 import { NavLink, Link } from 'react-router-dom'
 
+
 import {
     Nav,
     H1,
@@ -12,9 +13,9 @@ export const Navbar = () => {
 
 
     let activeStyle = {
-        transition: "0.2s",
-        borderBottom: "solid 3px #A0A0A0",
-        color: "#A0A0A0"
+        // transition: "0.3s",
+        // borderBottom: "solid 4px #A0A0A0",
+        color: "#878787"
 
     };
 
@@ -23,49 +24,47 @@ export const Navbar = () => {
         <>
             <Nav>
 
-                <H1>
-                    <NavLink
-                        to="/"
-                        style={({ isActive }) =>
-                            isActive ? activeStyle : undefined
-                        }
-                    >
-                        Начало
-                    </NavLink>
-                </H1>
-                <H1>
-                    <NavLink
-                        to="about"
-                        style={({ isActive }) =>
-                            isActive ? activeStyle : undefined
-                        }
-                    >
-                        За списанието
-                    </NavLink>
-                </H1>
+                <NavLink
+                    to="/"
+                    style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                    }
+                >
+                    <H1>Начало</H1>
+                </NavLink>
+
+                <NavLink
+                    to="about"
+                    style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                    }
+                >
+                    <H1>За списанието</H1>
+                </NavLink>
+
                 <Link to="/">
                     <Image src={logo} alt="Пари и култура" />
                 </Link>
-                <H1>
-                    <NavLink
-                        to="archive"
-                        style={({ isActive }) =>
-                            isActive ? activeStyle : undefined
-                        }
-                    >
-                        Архив
-                    </NavLink>
-                </H1>
-                <H1>
-                    <NavLink
-                        to="authors"
-                        style={({ isActive }) =>
-                            isActive ? activeStyle : undefined
-                        }
-                    >
-                        Насоки за авторите
-                    </NavLink>
-                </H1>
+
+
+                <NavLink
+                    to="archive"
+                    style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                    }
+                >
+                    <H1>Архив</H1>
+                </NavLink>
+
+
+                <NavLink
+                    to="authors"
+                    style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                    }
+                >
+                    <H1>Насоки за авторите</H1>
+                </NavLink>
 
             </Nav>
         </>

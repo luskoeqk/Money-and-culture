@@ -29,5 +29,15 @@
 
 .FooterItem {
     /* border-top: 4px solid #d0d9db; */
+}
 
+
+@media screen and (max-width: 880px) {
+
+    .FooterLinks {
+        padding: 0px;
+        grid-template-columns: repeat(3, 100px);
+        width: auto;
+        margin-left: auto;
+    }
 }
