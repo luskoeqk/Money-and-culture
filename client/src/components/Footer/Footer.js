@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 const StyledHr = styled.hr`
     border-top: 4px solid #d0d9db;
     border-bottom: none;
-    min-width: 30px;
+    /* min-width: 30px; */
     width: auto;
 
     @media screen and (max-width: 880px){
