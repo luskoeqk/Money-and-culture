@@ -40,14 +40,16 @@ export const H1 = styled.h3`
     
     &:hover {
         transition: 0.25s;
-        /* cursor: pointer; */
-        /* border-bottom: solid 3px #d0d9db;   */
         border: 3px solid #d0d9db;  
         border-radius: 30px;
     }
 
     @media screen and (max-width: 880px){
         justify-content: center;
+
+        &:hover{
+            border: 3px solid transparent;  
+        }
     }
 
 `
