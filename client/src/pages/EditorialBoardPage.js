@@ -5,7 +5,6 @@ export const EditorialBoardPage = () => {
     return (
         <div>
             <EditorialBoard />
-            
         </div>
     )
 }

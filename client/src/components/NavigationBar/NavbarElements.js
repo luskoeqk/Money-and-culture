@@ -72,3 +72,33 @@ export const Image = styled.img`
         width: auto;
     }
 `
+
+
+export const MuiDropDown = styled.div`
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+
+    border: 3px solid transparent;
+    border-radius: 15px;
+
+    &:hover {
+        transition: 0.25s;
+        border: 3px solid #d0d9db;  
+        border-radius: 30px;
+    }
+
+    @media screen and (max-width: 880px){
+        justify-content: center;
+
+        &:hover{
+            border: 3px solid transparent;  
+        }
+    }
+`
