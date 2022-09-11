@@ -1,14 +1,13 @@
-import React from 'react'
 
 import styles from "./EditorialBoard.module.css"
 import { EditorialBoardCard } from './EditorialBoardCard'
 
-import editor1 from '../../../assets/TestEditorialImage/editor1.jpg'
-import editor2 from '../../../assets/TestEditorialImage/editor2.jpg'
-import editor3 from '../../../assets/TestEditorialImage/editor3.jpg'
-import editor4 from '../../../assets/TestEditorialImage/editor4.jpg'
-import editor5 from '../../../assets/TestEditorialImage/editor5.jpg'
-import editor6 from '../../../assets/TestEditorialImage/editor6.jpg'
+import editor1 from '../../assets/TestEditorialImage/editor1.jpg'
+import editor2 from '../../assets/TestEditorialImage/editor2.jpg'
+import editor3 from '../../assets/TestEditorialImage/editor3.jpg'
+import editor4 from '../../assets/TestEditorialImage/editor4.jpg'
+import editor5 from '../../assets/TestEditorialImage/editor5.jpg'
+import editor6 from '../../assets/TestEditorialImage/editor6.jpg'
 
 
 

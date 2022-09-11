@@ -20,6 +20,7 @@ import { GeneralTerms } from './pages/GeneralTerms';
 import { Policy } from './pages/Policy';
 
 import { NotFound } from './pages/NotFound';
+import { EditorialBoardPage } from './pages/EditorialBoardPage';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
                     <Route path="archive" element={<Archive />} />
                     <Route path="terms" element={<GeneralTerms />} />
                     <Route path="policy" element={<Policy />} />
+                    <Route path="editorialboard" element={<EditorialBoardPage />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
                 <ScrollTop />
