@@ -11,7 +11,7 @@ import styles from './EditorialBoard.module.css'
 export const EditorialBoardCard = (
     props
 ) => {
-    //props.hyperlink   props.picture   props.title
+
 
     return (
 
