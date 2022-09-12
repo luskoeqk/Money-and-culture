@@ -11,39 +11,31 @@ import styles from './EditorialBoard.module.css'
 export const EditorialBoardCard = (
     props
 ) => {
-
+    //props.hyperlink   props.picture   props.title
 
     return (
-        <div className={styles.EditorialBoardCard} style={{ width: '225px' }}>
-            <a style={{ textDecoration: 'none' }} href={props.hyperlink} target="_blank" rel="noreferrer">
-                <Card sx={{
-                    maxWidth: 225,
-                    maxHeight: 407,
-                    textAlign: 'center',
-                    border: '3px solid white',
-                    borderRadius: '25px',
-                    backgroundColor: '#d0d9db',
-                }}>
-                    <CardActionArea>
 
-                        <CardMedia
+        <div>
+            <a href={props.hyperlink} target="_blank" rel="noreferrer">
 
-                            component="img"
-                            height="300"
-                            image={props.picture}
-                            alt={''}
-                        />
-                        <CardContent >
-                            <Typography gutterBottom variant="h6" component="div">
-                                {props.title}
-                            </Typography>
-                        </CardContent>
+                <article className={styles.EditorialBoardCardArticle}>
 
-
-                    </CardActionArea>
-                </Card>
+                    <img style={{
+                        height: 'auto',
+                        width: '100%',
+                        cursor: 'pointer',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        borderRadius: '25px 25px 0px 0px',
+                    }}
+                        src={props.picture} alt={props.title} />
+                    <div>
+                        <h3>{props.title}</h3>
+                    </div>
+                </article>
             </a>
 
         </div>
+
     )
 }

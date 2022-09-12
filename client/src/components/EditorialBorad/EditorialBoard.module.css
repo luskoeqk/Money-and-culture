@@ -1,6 +1,11 @@
+.EditorialBoardWrapper {
+    background-color: #d0d9db;
+    padding: 10px;
+}
+
 .EditorialBoard {
     justify-items: center;
-    background-color: #162123;
+    /* background-color: #162123; */
     padding: 50px;
     padding-left: auto;
     padding-right: auto;
@@ -11,31 +16,53 @@
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    margin: 0 auto;
-    width: 60%;
+    gap: 4.5rem;
+    margin: 0;
+    /* width: 60%; */
 }
 
-
-button:hover{
+button:hover {
     background: #ffffff;
 }
 
-
 @media all and (max-width: 880px) {
 
-    .EditorialBoardCards{
+    .EditorialBoardCards {
         display: block;
         padding: 0px;
     }
 
-    .EditorialBoard{
-        padding: 0px;
+    .EditorialBoard {
+        padding: auto;
         align-items: center;
         text-align: center;
+        justify-content: center;
     }
-    
-    .EditorialBoardCard{
+
+    .EditorialBoardCard {
         padding-top: 20px;
     }
+
+    .EditorialBoardCardArticle {
+        margin-bottom: 20px;
+        width: 90vw;
+    }
+}
+
+/* CardMedia */
+.EditorialBoardCardArticle {
+    background-color: #162123;
+    color: #d0d9db;
+    width: auto;
+    height: 100%;
+    text-align: center;
+    border: 10px solid #162123;
+    border-radius: 15px;
+
+}
+
+.EditorialBoardCardArticle:hover{
+    background-color: #162123f3;
+    border-radius: 23px;
+    transition: 0.3s;
 }
