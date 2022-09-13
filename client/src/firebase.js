@@ -1,11 +1,10 @@
 
 import { initializeApp } from "firebase/app";
 
-import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_apiKey,
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: "money-and-culture.firebaseapp.com",
     projectId: "money-and-culture",
     storageBucket: "money-and-culture.appspot.com",
@@ -16,6 +15,5 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
 export const firestoreFirebase = getFirestore(app);

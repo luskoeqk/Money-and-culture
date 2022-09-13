@@ -25,6 +25,7 @@ import { EditorialBoardPage } from './pages/EditorialBoardPage';
 
 function App() {
     return (
+        
         <div className="App">
 
             <BrowserRouter>

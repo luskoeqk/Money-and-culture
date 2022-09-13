@@ -12,17 +12,41 @@
 }
 
 .EditorialBoardCards {
-    padding: 20px;
-    display: grid;
     justify-items: center;
-    grid-template-columns: repeat(4, 1fr);
     gap: 4.5rem;
-    margin: 0;
+    /* padding: 20px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     /* width: 60%; */
+
 }
 
 button:hover {
     background: #ffffff;
+}
+
+
+/* CardMedia */
+.EditorialBoardCardArticle {
+    background-color: #162123;
+    color: #d0d9db;
+    width: auto;
+    height: 470px;
+    text-align: center;
+    border: 19px solid #162123;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+}
+
+h1{
+    color: #162123
+}
+
+.EditorialBoardCardArticle:hover {
+    background-color: #162123f3;
+    border-radius: 23px;
+    transition: 0.3s;
 }
 
 @media all and (max-width: 880px) {
@@ -45,24 +69,7 @@ button:hover {
 
     .EditorialBoardCardArticle {
         margin-bottom: 20px;
-        width: 90vw;
+        border: 10px solid #162123;
+        height: auto;
     }
-}
-
-/* CardMedia */
-.EditorialBoardCardArticle {
-    background-color: #162123;
-    color: #d0d9db;
-    width: auto;
-    height: 100%;
-    text-align: center;
-    border: 10px solid #162123;
-    border-radius: 15px;
-
-}
-
-.EditorialBoardCardArticle:hover{
-    background-color: #162123f3;
-    border-radius: 23px;
-    transition: 0.3s;
 }
