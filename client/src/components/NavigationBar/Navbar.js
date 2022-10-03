@@ -82,7 +82,7 @@ export const Navbar = () => {
                     aria-expanded={open ? 'true' : undefined}
                     onClick={handleClick}
                     >
-                    И още</Button>
+                    Още</Button>
 
                 <Menu
                     id="basic-menu"
