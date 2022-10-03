@@ -5,18 +5,21 @@
 
 .EditorialBoard {
     justify-items: center;
-    /* background-color: #162123; */
     padding: 50px;
     padding-left: auto;
     padding-right: auto;
 }
 
 .EditorialBoardCards {
-    justify-items: center;
+    /* padding: 20px; */
+    
     gap: 4.5rem;
-    padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    /* columns: 4; */
+    /* gap: 100px; */
+    /* margin: 30px; */
 
 }
 
@@ -34,7 +37,6 @@ button:hover {
     text-align: center;
     border: 19px solid #162123;
     border-radius: 15px;
-    margin-bottom: 20px;
 
 }
 
