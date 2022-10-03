@@ -15,7 +15,7 @@ export const EditorialBoardCard = (
                 <article className={styles.EditorialBoardCardArticle}>
 
                     <img style={{
-                        height: 'auto',
+                        height: '100%',
                         width: '100%',
                         cursor: 'pointer',
                         justifyContent: 'center',

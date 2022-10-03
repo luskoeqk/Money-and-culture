@@ -14,10 +14,9 @@
 .EditorialBoardCards {
     justify-items: center;
     gap: 4.5rem;
-    /* padding: 20px; */
+    padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* width: 60%; */
 
 }
 
@@ -30,8 +29,8 @@ button:hover {
 .EditorialBoardCardArticle {
     background-color: #162123;
     color: #d0d9db;
-    width: auto;
-    height: 470px;
+    width: 100%;
+    height: auto;
     text-align: center;
     border: 19px solid #162123;
     border-radius: 15px;
