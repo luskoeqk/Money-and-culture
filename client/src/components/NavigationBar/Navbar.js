@@ -51,16 +51,30 @@ export const Navbar = () => {
                     <H1>Начало</H1>
                 </NavLink>
 
-                {/* nav link ex */}
-                {/* <NavLink
-                    to="about"
+
+                <NavLink
+                    to="archive"
                     style={({ isActive }) =>
                         isActive ? activeStyle : undefined
                     }
                 >
-                    <H1>За списанието</H1>
-                </NavLink> */}
-                {/* nav link ex */}
+                    <H1>Архив</H1>
+                </NavLink>
+
+
+                <Link to="/">
+                    <Image src={logo} alt="Пари и култура" />
+                </Link>
+
+                <NavLink
+                    to="authors"
+                    style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                    }
+                >
+                    <H1>Насоки за авторите</H1>
+                </NavLink>
+
 
                 {/* mui */}
                 <MuiDropDown>
@@ -74,71 +88,46 @@ export const Navbar = () => {
                             backgroundColor: 'transparent',
                             fontWeight: 'bold',
                             fontFamily: ['Noto Serif HK', 'serif']
-                        
+
                         }}
-                    id="basic-button"
-                    aria-controls={open ? 'basic-menu' : undefined}
-                    aria-haspopup="true"
-                    aria-expanded={open ? 'true' : undefined}
-                    onClick={handleClick}
+                        id="basic-button"
+                        aria-controls={open ? 'basic-menu' : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={open ? 'true' : undefined}
+                        onClick={handleClick}
                     >
-                    Още</Button>
+                        Още</Button>
 
-                <Menu
-                    id="basic-menu"
-                    anchorEl={anchorEl}
-                    open={open}
-                    onClose={handleClose}
-                    MenuListProps={{
-                        'aria-labelledby': 'basic-button',
-                        'color': 'red',
-                    }}
-                >
-                    <Link to="/about">
-                        <MenuItem
-                            style={{
-                                color: "black",
-                            }}
-                            onClick={handleClose}>За списанието</MenuItem>
-                    </Link>
+                    <Menu
+                        id="basic-menu"
+                        anchorEl={anchorEl}
+                        open={open}
+                        onClose={handleClose}
+                        MenuListProps={{
+                            'aria-labelledby': 'basic-button',
+                            'color': 'red',
+                        }}
+                    >
+                        <Link to="/about">
+                            <MenuItem
+                                style={{
+                                    color: "black",
+                                }}
+                                onClick={handleClose}>За списанието</MenuItem>
+                        </Link>
 
-                    <Link to="/editorialboard">
-                        <MenuItem
-                            style={{
-                                color: "black",
-                            }}
-                            onClick={handleClose}>Редакторски колектив</MenuItem>
-                    </Link>
-                </Menu>
-            </MuiDropDown>
-            {/* mui */}
+                        <Link to="/editorialboard">
+                            <MenuItem
+                                style={{
+                                    color: "black",
+                                }}
+                                onClick={handleClose}>Редакторски колектив</MenuItem>
+                        </Link>
+                    </Menu>
+                </MuiDropDown>
+                {/* mui */}
 
-
-            <Link to="/">
-                <Image src={logo} alt="Пари и култура" />
-            </Link>
-
-
-            <NavLink
-                to="archive"
-                style={({ isActive }) =>
-                    isActive ? activeStyle : undefined
-                }
-            >
-                <H1>Архив</H1>
-            </NavLink>
-
-
-            <NavLink
-                to="authors"
-                style={({ isActive }) =>
-                    isActive ? activeStyle : undefined
-                }
-            >
-                <H1>Насоки за авторите</H1>
-            </NavLink>
-
-        </Nav>
+            </Nav>
         </>
     )
 }
