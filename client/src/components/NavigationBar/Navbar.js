@@ -41,7 +41,6 @@ export const Navbar = () => {
         <>
             <Nav>
 
-
                 <NavLink
                     to="/"
                     style={({ isActive }) =>
@@ -105,9 +104,9 @@ export const Navbar = () => {
                         onClose={handleClose}
                         MenuListProps={{
                             'aria-labelledby': 'basic-button',
-                            'color': 'red',
                         }}
                     >
+                        
                         <Link to="/about">
                             <MenuItem
                                 style={{
