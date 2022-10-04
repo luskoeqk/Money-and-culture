@@ -9,21 +9,24 @@ export const EditorialBoardCard = (
 
     return (
 
-        <div>
+        <div className='Wrapper'>
             <a href={props.hyperlink} target="_blank" rel="noreferrer">
 
                 <article className={styles.EditorialBoardCardArticle}>
 
-                    <img style={{
-                        height: '100%',
-                        width: '100%',
-                        cursor: 'pointer',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        borderRadius: '25px 25px 0px 0px',
-                    }}
-                        src={props.picture} alt={props.title} />
                     <div>
+                        <img style={{
+                            height: '100%',
+                            width: '100%',
+                            cursor: 'pointer',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            borderRadius: '25px 25px 0px 0px',
+                        }}
+                            src={props.picture} alt={props.title} />
+                    </div>
+                    <div style={{
+                    }}>
                         <h3>{props.title}</h3>
                     </div>
                 </article>

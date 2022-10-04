@@ -13,6 +13,8 @@
 .EditorialBoardCards {
     /* padding: 20px; */
     
+    padding-left: 200px;
+    padding-right: 200px;
     gap: 4.5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -33,7 +35,7 @@ button:hover {
     background-color: #162123;
     color: #d0d9db;
     width: 100%;
-    height: auto;
+    height: 55vh;
     text-align: center;
     border: 19px solid #162123;
     border-radius: 15px;

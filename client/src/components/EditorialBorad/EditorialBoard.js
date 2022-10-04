@@ -158,33 +158,33 @@ const editors = [
     },
     {
         'id': 22,
-        'name': 'Гл. ас. д-р Росица Тончева',
-        'hyperlink': 'https://vuzflab.eu/%D0%B3%D0%BB-%D0%B0%D1%81-%D0%B4-%D1%80-%D1%80%D0%BE%D1%81%D0%B8%D1%86%D0%B0-%D1%82%D0%BE%D0%BD%D1%87%D0%B5%D0%B2%D0%B0/',
-        'image': 'none'
-    },
-    {
-        'id': 23,
         'name': 'д-р Ясен Димитров',
         'hyperlink': 'https://vuzflab.eu/%D0%B4-%D1%80-%D1%8F%D1%81%D0%B5%D0%BD-%D0%B4%D0%B8%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%B2/',
         'image': y_dimitrov
     },
     {
-        'id': 24,
+        'id': 23,
         'name': 'д-р Пламен Иванов',
         'hyperlink': 'https://vuzflab.eu/dr-plamen-ivanov/',
         'image': plamen_ivanov
     },
     {
-        'id': 25,
+        'id': 24,
         'name': 'д-р Елина Кърпачева',
         'hyperlink': 'https://vuzflab.eu/%D0%B4-%D1%80-%D0%B5%D0%BB%D0%B8%D0%BD%D0%B0-%D0%BA%D1%8A%D1%80%D0%BF%D0%B0%D1%87%D0%B5%D0%B2%D0%B0/',
         'image': elina_kurpacheva
     },
     {
-        'id': 26,
+        'id': 25,
         'name': 'ас. Никола Димитров',
         'hyperlink': 'https://vuzflab.eu/%D0%BD%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0-%D0%B4%D0%B8%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%B2/',
         'image': nikola_dimitrov
+    },
+    {
+        'id': 26,
+        'name': 'Гл. ас. д-р Росица Тончева',
+        'hyperlink': 'https://vuzflab.eu/%D0%B4-%D1%80-%D1%8F%D1%81%D0%B5%D0%BD-%D0%B4%D0%B8%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%B2/',
+        'image': 'none'
     }
 
 ]
