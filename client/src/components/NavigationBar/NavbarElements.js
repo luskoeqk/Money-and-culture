@@ -25,6 +25,7 @@ export const Nav = styled.nav`
     }
 `
 
+
 export const H1 = styled.h3`
     /* color: #9FA8AA; */
     height: 35px;
@@ -54,6 +55,7 @@ export const H1 = styled.h3`
     }
 
 `
+
 
 export const Image = styled.img`
     display: block;
