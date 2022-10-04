@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import logo from '../../assets/logo/pklogo.png'
 
-import { NavLink, Link, useLinkClickHandler } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 // mui
 import Button from '@mui/material/Button';
@@ -17,6 +17,7 @@ import {
     Image,
     MuiDropDown,
 } from './NavbarElements';
+
 
 export const Navbar = () => {
 
@@ -82,9 +83,7 @@ export const Navbar = () => {
                             textTransform: 'none',
                             color: "#d0d9db",
                             fontSize: '26px',
-                            backgroundColor: 'none',
                             padding: '0px',
-                            backgroundColor: 'transparent',
                             fontWeight: 'bold',
                             fontFamily: ['Noto Serif HK', 'serif']
 
@@ -106,7 +105,7 @@ export const Navbar = () => {
                             'aria-labelledby': 'basic-button',
                         }}
                     >
-                        
+
                         <Link to="/about">
                             <MenuItem
                                 style={{
