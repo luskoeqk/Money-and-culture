@@ -3,23 +3,17 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
     background: #162123;
-    height: 80px;
+    height: atuo;
     display: flex;
-    justify-content: center;
+
     align-items: center;
-    /* padding: 0.5rem calc((100vw - 1000px) / 2); */
-    padding: 200px;
-    margin: 0 auto;
-    width: auto;
-    padding-left: 250px;
-    padding-bottom: 10px;
-    padding-top: 10px;    
-    z-index: 10; 
+    justify-content: center;
+    padding-left: 12vw;
+    padding-right: 6vw;
 
     @media all and (max-width: 880px) {
         display: grid;
-        /* grid-template-rows: repeat(5, 1fr); */
-        height: 500px;
+        height: auto;
         padding: 0px;
         margin: 0px;
     }
@@ -58,17 +52,17 @@ export const H1 = styled.h3`
 
 
 export const Image = styled.img`
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 293px;
-    padding-left: 20px;
-    padding-right: 20px;
+    // display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+    // width: 293px;
+    // padding-left: 20px;
+    // padding-right: 20px;
 
-    /* &:hover {
-        transition: transform 0.7s;
-        transform: scale(1.1);
-    } */
+    display: block;
+    width: 293px;
+    margin: auto;
+    padding: 30px;
 
     @media all and (max-width: 700px) {
         max-width: 200px;

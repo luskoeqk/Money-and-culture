@@ -66,6 +66,8 @@ export const Navbar = () => {
                     <Image src={logo} alt="Пари и култура" />
                 </Link>
 
+
+
                 <NavLink
                     to="authors"
                     style={({ isActive }) =>
