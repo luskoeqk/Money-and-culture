@@ -6,10 +6,9 @@ export const Nav = styled.nav`
     height: atuo;
     display: flex;
 
+
     align-items: center;
     justify-content: center;
-    padding-left: 12vw;
-    padding-right: 6vw;
 
     @media all and (max-width: 880px) {
         display: grid;
