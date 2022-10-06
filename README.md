@@ -1,1 +1,2 @@
-"Money-and-culture" 
+Money and culture
+Пари и култура
