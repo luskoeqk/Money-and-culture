@@ -1,1 +1,1 @@
-"# Money-and-culture" 
+"Money-and-culture" 
