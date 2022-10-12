@@ -21,7 +21,7 @@ import { Policy } from './pages/Policy';
 
 import { NotFound } from './pages/NotFound';
 import { EditorialBoardPage } from './pages/EditorialBoardPage';
-// import { NavigationBar } from './components/NavigationBar2.0/NavigationBar';
+import { NavigationBar } from './components/NavigationBar2.0/NavigationBar';
 
 
 function App() {
@@ -30,8 +30,8 @@ function App() {
         <div className="App">
 
             <BrowserRouter>
-                <Navbar />
-                {/* <NavigationBar /> */}
+                {/* <Navbar /> */}
+                <NavigationBar />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="about" element={<About />} />
