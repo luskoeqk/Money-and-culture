@@ -8,7 +8,7 @@ export const NavigationBar = () => {
 
         <nav>
             <div id="main_menu">
-                <div className="inner_main_menu">
+                <div className={styles.inner_main_menu}>
                     <ul>
                         <li>one</li>
                         <li>two</li>
