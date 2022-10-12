@@ -74,6 +74,16 @@ export const NavigationBar = () => {
                         <ul>
                             <li>
                                 <NavLink
+                                    to="/"
+                                    style={({ isActive }) =>
+                                        isActive ? activeStyle : undefined
+                                    }
+                                >
+                                    <H1>Начало</H1>
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
                                     to="archive"
                                     style={({ isActive }) =>
                                         isActive ? activeStyle : undefined
@@ -82,9 +92,27 @@ export const NavigationBar = () => {
                                     <H1>Архив</H1>
                                 </NavLink>
                             </li>
-                            <li>two</li>
-                            <li>three</li>
-                            <li>four</li>
+
+                            <li>
+                                <NavLink
+                                    to="authors"
+                                    style={({ isActive }) =>
+                                        isActive ? activeStyle : undefined
+                                    }
+                                >
+                                    <H1>Насоки за авторите</H1>
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="authors"
+                                    style={({ isActive }) =>
+                                        isActive ? activeStyle : undefined
+                                    }
+                                >
+                                    <H1>Насоки за авторите</H1>
+                                </NavLink>
+                            </li>
                         </ul>
                     </div>
                 </div>
