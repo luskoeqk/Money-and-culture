@@ -2,11 +2,12 @@
 
 nav{
     background-color: #162123;
+    height: auto;
 }
 
 .inner_main_menu {
     margin: 0 auto;
-    width: 1170px;
+    width: auto;
 }
 
 .inner_main_menu ul {
