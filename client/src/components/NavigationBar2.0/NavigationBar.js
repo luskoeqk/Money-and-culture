@@ -14,11 +14,8 @@ import { NavLink, Link } from 'react-router-dom'
 export const Nav = styled.nav`
     background: #162123;
     height: atuo;
-    display: flex;
 
-
-    align-items: center;
-    justify-content: center;
+    padding-bottom: 100px;
 
     @media all and (max-width: 880px) {
         display: grid;
