@@ -19,35 +19,20 @@ import MenuItem from '@mui/material/MenuItem';
 
 const MuiDropDown = styled.div`
 
-
-
-    // padding: 9px;
-    // padding-left: 30px;
-    // padding-right: 30px;
-    // padding-bottom: 15px;
-
-
-    // &:hover {
-    //     transition: 0.25s;
-    //     border: 3px solid #d0d9db;  
-    // }
-
-
-    padding-top: 30px;
-
     Button{
-        color: #d0d9db;
 
-        border: 3px solid #d0d9db;  
-        border-radius: 30px;
-        width: 200px;
-        // border: 3px solid transparent;
-        // border-radius: 15px;
-    
+        color: #d0d9db;
+        border: 3px solid transparent;  
+        width: 120px;
+        height: 65px;
+        border-radius: 15px;
+        top: -5px;
 
         &:hover{
-            // transition: 0.25s;
-            // border: 3px solid #d0d9db;   
+            transition: 0.25s;
+            border: 3px solid #d0d9db;   
+            border-radius: 30px;
+
         }
     }
 
@@ -70,16 +55,10 @@ const Nav = styled.nav`
 `
 
 const H1 = styled.h3`
-    /* color: #9FA8AA; */
-    height: 35px;
-    display: flex;
-    align-items: center;
-    padding: 9px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
+justify-content: center;
+
+    padding: 15px;
+
     border: 3px solid transparent;
     border-radius: 15px;
     
@@ -154,9 +133,7 @@ export const NavigationBar = () => {
                             </li>
 
                             <li>
-                                <div style={{
-                                    width: '200px'
-                                }}>
+                                <div>
                                     <NavLink
                                         to="authors"
                                         style={({ isActive }) =>
