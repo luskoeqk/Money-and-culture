@@ -1,3 +1,5 @@
+// react
+import * as React from 'react';
 
 // styles
 import styles from './NavigationBar.module.css';
@@ -9,13 +11,55 @@ import logo from '../../assets/logo/pklogo.png'
 // react router dom
 import { NavLink, Link } from 'react-router-dom'
 
+// mui
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 
-export const Nav = styled.nav`
+const MuiDropDown = styled.div`
+
+
+
+    // padding: 9px;
+    // padding-left: 30px;
+    // padding-right: 30px;
+    // padding-bottom: 15px;
+
+
+    // &:hover {
+    //     transition: 0.25s;
+    //     border: 3px solid #d0d9db;  
+    // }
+
+
+    padding-top: 30px;
+
+    Button{
+        color: #d0d9db;
+
+        border: 3px solid #d0d9db;  
+        border-radius: 30px;
+        width: 200px;
+        // border: 3px solid transparent;
+        // border-radius: 15px;
+    
+
+        &:hover{
+            // transition: 0.25s;
+            // border: 3px solid #d0d9db;   
+        }
+    }
+
+    @media screen and (max-width: 880px){
+        justify-content: center;
+    }
+
+`
+
+const Nav = styled.nav`
     background: #162123;
-    height: atuo;
-
-    padding-bottom: 100px;
+    height: auto;
 
     @media all and (max-width: 880px) {
         display: grid;
@@ -25,7 +69,7 @@ export const Nav = styled.nav`
     }
 `
 
-export const H1 = styled.h3`
+const H1 = styled.h3`
     /* color: #9FA8AA; */
     height: 35px;
     display: flex;
@@ -55,6 +99,11 @@ export const H1 = styled.h3`
 
 `
 
+const LogoPik = styled.img`
+    width: 400px;
+    max-width: 400px;
+`
+
 
 export const NavigationBar = () => {
 
@@ -64,12 +113,23 @@ export const NavigationBar = () => {
         borderColor: "green"
     };
 
-
+    //mui
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
 
     return (
         <>
             <Nav>
                 <div id="main_menu">
+                    <div className={styles.logo_area}>
+                        <LogoPik src={logo} alt="пари и култура" />
+                    </div>
                     <div className={styles.inner_main_menu}>
                         <ul>
                             <li>
@@ -94,24 +154,68 @@ export const NavigationBar = () => {
                             </li>
 
                             <li>
-                                <NavLink
-                                    to="authors"
-                                    style={({ isActive }) =>
-                                        isActive ? activeStyle : undefined
-                                    }
-                                >
-                                    <H1>Насоки за авторите</H1>
-                                </NavLink>
+                                <div style={{
+                                    width: '200px'
+                                }}>
+                                    <NavLink
+                                        to="authors"
+                                        style={({ isActive }) =>
+                                            isActive ? activeStyle : undefined
+                                        }
+                                    >
+                                        <H1>Насоки за авторите</H1>
+                                    </NavLink>
+                                </div>
                             </li>
                             <li>
-                                <NavLink
-                                    to="authors"
-                                    style={({ isActive }) =>
-                                        isActive ? activeStyle : undefined
-                                    }
-                                >
-                                    <H1>Насоки за авторите</H1>
-                                </NavLink>
+                                {/* mui */}
+                                <MuiDropDown>
+                                    <Button
+                                        style={{
+                                            textTransform: 'none',
+                                            // color: "#d0d9db",
+                                            fontSize: '26px',
+                                            padding: '0px',
+                                            fontWeight: 'bold',
+                                            fontFamily: ['Noto Serif HK', 'serif']
+
+                                        }}
+                                        id="basic-button"
+                                        aria-controls={open ? 'basic-menu' : undefined}
+                                        aria-haspopup="true"
+                                        aria-expanded={open ? 'true' : undefined}
+                                        onClick={handleClick}
+                                    >
+                                        Още</Button>
+
+                                    <Menu
+                                        id="basic-menu"
+                                        anchorEl={anchorEl}
+                                        open={open}
+                                        onClose={handleClose}
+                                        MenuListProps={{
+                                            'aria-labelledby': 'basic-button',
+                                        }}
+                                    >
+
+                                        <Link to="/about">
+                                            <MenuItem
+                                                style={{
+                                                    color: "black",
+                                                }}
+                                                onClick={handleClose}>За списанието</MenuItem>
+                                        </Link>
+
+                                        <Link to="/editorialboard">
+                                            <MenuItem
+                                                style={{
+                                                    color: "black",
+                                                }}
+                                                onClick={handleClose}>Редакторски колектив</MenuItem>
+                                        </Link>
+                                    </Menu>
+                                </MuiDropDown>
+                                {/* mui */}
                             </li>
                         </ul>
                     </div>

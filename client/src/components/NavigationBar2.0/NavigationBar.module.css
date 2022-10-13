@@ -1,13 +1,11 @@
 
 
-nav{
-    background-color: #162123;
-    height: auto;
-}
 
 .inner_main_menu {
     margin: 0 auto;
     width: auto;
+    text-align: center;
+    justify-content: center;
 }
 
 .inner_main_menu ul {
@@ -15,6 +13,8 @@ nav{
     padding: 0;
     list-style: none;
     text-align: right;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .inner_main_menu ul li {
@@ -29,3 +29,12 @@ nav{
 .inner_main_menu ul li:nth-child(2) {
     float: left;
 }
+
+.logo_area{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: "";
+    margin-left: -200px;
+}
+
