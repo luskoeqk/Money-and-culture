@@ -26,7 +26,7 @@ const MuiDropDown = styled.div`
         width: 120px;
         height: 65px;
         border-radius: 15px;
-        top: -40px;
+        top: -25px;
 
         &:hover{
             transition: 0.25s;
@@ -57,7 +57,7 @@ const Nav = styled.nav`
 const H1 = styled.h3`
 justify-content: center;
 
-    padding: 15px;
+    padding: 20px;
 
     border: 3px solid transparent;
     border-radius: 15px;
@@ -93,6 +93,7 @@ const LogoPik = styled.img`
 const ForauthDiv = styled.div`
     width: 180px;
     margin-right: 50px;
+    margin-top: 40px;
 `
 
 
