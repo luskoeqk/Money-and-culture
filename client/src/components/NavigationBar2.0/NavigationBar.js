@@ -26,7 +26,7 @@ const MuiDropDown = styled.div`
         width: 120px;
         height: 65px;
         border-radius: 15px;
-        top: -5px;
+        top: -40px;
 
         &:hover{
             transition: 0.25s;
@@ -79,8 +79,20 @@ justify-content: center;
 `
 
 const LogoPik = styled.img`
+    margin-top: 30px;
     width: 400px;
-    max-width: 400px;
+
+    @media screen and (max-width: 880px){
+        margin-top: 0px;
+        width: 250px;
+        justify-content: center;
+        text-align: center;
+    }
+`
+
+const ForauthDiv = styled.div`
+    width: 180px;
+    margin-right: 50px;
 `
 
 
@@ -105,9 +117,11 @@ export const NavigationBar = () => {
     return (
         <>
             <Nav>
-                <div id="main_menu">
+                <div className={styles.main_menu}>
                     <div className={styles.logo_area}>
-                        <LogoPik src={logo} alt="пари и култура" />
+                        <Link to="/">
+                            <LogoPik src={logo} alt="пари и култура" />
+                        </Link>
                     </div>
                     <div className={styles.inner_main_menu}>
                         <ul>
@@ -133,7 +147,7 @@ export const NavigationBar = () => {
                             </li>
 
                             <li>
-                                <div>
+                                <ForauthDiv>
                                     <NavLink
                                         to="authors"
                                         style={({ isActive }) =>
@@ -142,7 +156,7 @@ export const NavigationBar = () => {
                                     >
                                         <H1>Насоки за авторите</H1>
                                     </NavLink>
-                                </div>
+                                </ForauthDiv>
                             </li>
                             <li>
                                 {/* mui */}

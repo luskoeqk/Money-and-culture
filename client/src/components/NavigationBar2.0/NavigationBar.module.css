@@ -1,4 +1,6 @@
-
+.main_menu {
+    display: unset;
+}
 
 
 .inner_main_menu {
@@ -25,18 +27,50 @@
 }
 
 .inner_main_menu ul li:nth-child(1) {
+    margin: 30px;
     float: left;
 }
 
 .inner_main_menu ul li:nth-child(2) {
+    margin: 30px;
     float: left;
 }
 
-.logo_area{
+.logo_area {
     position: absolute;
     left: 50%;
-    top: 0;
-    content: "";
     margin-left: -200px;
 }
 
+@media screen and (max-width: 880px) {
+    .inner_main_menu ul {
+        margin: auto;
+        padding: auto;
+        list-style: none;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    .inner_main_menu ul li:nth-child(1) {
+        margin: 0px;
+        float: center;
+    }
+
+    .inner_main_menu ul li:nth-child(2) {
+        margin: 0px;
+        float: center;
+    }
+
+    .main_menu {
+        display: inline-block;
+        text-align: center;
+    }
+
+
+    .logo_area {
+        position: unset;
+        margin-left: 0px;
+    }
+}
