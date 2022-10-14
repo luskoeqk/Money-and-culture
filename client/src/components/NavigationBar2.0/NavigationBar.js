@@ -80,7 +80,7 @@ justify-content: center;
 
 const LogoPik = styled.img`
     margin-top: 30px;
-    width: 400px;
+    width: 20vw;
 
     @media screen and (max-width: 880px){
         margin-top: 0px;
