@@ -1,10 +1,7 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
+import React from 'react'
 
-import styles from './ContactUs.module.css';
-
-import styled from 'styled-components';
-
-const H1 = styled.h1`color: #d0d9db;`
-
+import styles from './ContactUs.module.css'
 
 export const ContactUs = () => {
     return (
@@ -12,7 +9,6 @@ export const ContactUs = () => {
             <div className={styles.ContactUsInnerWrapper}>
                 <div className={styles.ContactUsIFrame}>
                     <iframe
-                        title="VUZF map"
                         width={752}
                         height={445}
                         src="https://maps.google.com/maps?q=VUZF&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -20,7 +16,7 @@ export const ContactUs = () => {
                     />
                 </div>
                 <div className={styles.ContactUsContactInfo}>
-                    <H1><strong>КОНТАКТИ</strong></H1>
+                    <h1><strong>КОНТАКТИ</strong></h1>
                     <ul>
                         <li>София 1618 <br /> ул. „Гусла No1 (кв. „Овча Купел”) <br /> Висше училище по застраховане и финанси <br /> ст. 405</li>
                         <li>00359 2 40 80 15</li>
