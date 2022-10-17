@@ -80,7 +80,6 @@ justify-content: center;
 `
 
 const LogoPik = styled.img`
-    // margin-top: 30px;
     width: 15vw;
 
 `

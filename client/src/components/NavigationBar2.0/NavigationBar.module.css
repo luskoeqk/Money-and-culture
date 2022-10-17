@@ -14,7 +14,7 @@
     /* margin: 0px; */
     /* padding: 0px; */
     list-style: none;
-    text-align: center;
+    text-align: right;
     padding-left: 200px;
     padding-right: 200px;
 }
@@ -35,19 +35,11 @@
 }
 
 
-.inner_main_menu ul li:nth-child(5) {
-    float: right;
-}
-
-.inner_main_menu ul li:nth-child(4) {
-    float: right;
-}
-
-
 .logo_area {
-    /* position: absolute; */
-    /* left: 50%; */
-    /* margin-left: -200px; */
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    top: 5%;
 }
 
 @media screen and (max-width: 880px) {}
