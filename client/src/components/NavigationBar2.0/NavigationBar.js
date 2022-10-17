@@ -24,9 +24,9 @@ const MuiDropDown = styled.div`
         color: #d0d9db;
         border: 3px solid transparent;  
         width: 120px;
-        height: 65px;
+        height: 86px;
         border-radius: 15px;
-        top: -25px;
+        top: -5px;
 
         &:hover{
             transition: 0.25s;
@@ -57,8 +57,9 @@ const Nav = styled.nav`
 const H1 = styled.h3`
 justify-content: center;
 
-    padding: 20px;
+    padding: 25px;
 
+    font-size: 24px;
     border: 3px solid transparent;
     border-radius: 15px;
     
@@ -79,21 +80,15 @@ justify-content: center;
 `
 
 const LogoPik = styled.img`
-    margin-top: 30px;
-    width: 20vw;
+    // margin-top: 30px;
+    width: 15vw;
 
-    @media screen and (max-width: 880px){
-        margin-top: 0px;
-        width: 250px;
-        justify-content: center;
-        text-align: center;
-    }
 `
 
 const ForauthDiv = styled.div`
-    width: 180px;
-    margin-right: 50px;
-    margin-top: 40px;
+    // width: 180px;
+    // margin-right: 50px;
+    // margin-top: 40px;
 `
 
 
@@ -119,11 +114,6 @@ export const NavigationBar = () => {
         <>
             <Nav>
                 <div className={styles.main_menu}>
-                    <div className={styles.logo_area}>
-                        <Link to="/">
-                            <LogoPik src={logo} alt="пари и култура" />
-                        </Link>
-                    </div>
                     <div className={styles.inner_main_menu}>
                         <ul>
                             <li>
@@ -147,6 +137,17 @@ export const NavigationBar = () => {
                                 </NavLink>
                             </li>
 
+
+                            <li>
+                                <div className={styles.logo_area}>
+
+                                    <Link to="/">
+                                        <LogoPik src={logo} alt="пари и култура" />
+                                    </Link>
+                                </div>
+
+                            </li>
+
                             <li>
                                 <ForauthDiv>
                                     <NavLink
@@ -159,6 +160,7 @@ export const NavigationBar = () => {
                                     </NavLink>
                                 </ForauthDiv>
                             </li>
+
                             <li>
                                 {/* mui */}
                                 <MuiDropDown>
