@@ -11,8 +11,8 @@
 }
 
 .inner_main_menu ul {
-    /* margin: 0px; */
-    /* padding: 0px; */
+    margin: 0px;
+    padding: 0px;
     list-style: none;
     text-align: right;
     padding-left: 200px;
@@ -22,8 +22,8 @@
 .inner_main_menu ul li {
     float: none;
     display: inline-block;
-    /* padding-left: 30px; */
-    /* padding-right: 30px; */
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .inner_main_menu ul li:nth-child(1) {

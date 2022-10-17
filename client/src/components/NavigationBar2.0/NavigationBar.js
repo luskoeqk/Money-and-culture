@@ -19,20 +19,40 @@ import MenuItem from '@mui/material/MenuItem';
 
 const MuiDropDown = styled.div`
 
-    Button{
 
+
+    // padding: 9px;
+    // padding-left: 30px;
+    // padding-right: 30px;
+    // padding-bottom: 15px;
+
+
+    // &:hover {
+    //     transition: 0.25s;
+    //     border: 3px solid #d0d9db;  
+    // }
+
+
+    padding-top: 30px;
+
+    Button{
         color: #d0d9db;
         border: 3px solid transparent;  
         width: 120px;
-        height: 86px;
+        height: 65px;
         border-radius: 15px;
-        top: -25px;
+        top: -5px;
+
+        border: 3px solid #d0d9db;  
+        border-radius: 30px;
+        width: 200px;
+        // border: 3px solid transparent;
+        // border-radius: 15px;
+    
 
         &:hover{
-            transition: 0.25s;
-            border: 3px solid #d0d9db;   
-            border-radius: 30px;
-
+            // transition: 0.25s;
+            // border: 3px solid #d0d9db;   
         }
     }
 
@@ -57,9 +77,8 @@ const Nav = styled.nav`
 const H1 = styled.h3`
 justify-content: center;
 
-    padding: 20px;
+    padding: 15px;
 
-    font-size: 24px;
     border: 3px solid transparent;
     border-radius: 15px;
     
@@ -138,17 +157,7 @@ export const NavigationBar = () => {
 
 
                             <li>
-                                <div className={styles.logo_area}>
-
-                                    <Link to="/">
-                                        <LogoPik src={logo} alt="пари и култура" />
-                                    </Link>
-                                </div>
-
-                            </li>
-
-                            <li>
-                                <ForauthDiv>
+                                <div>
                                     <NavLink
                                         to="authors"
                                         style={({ isActive }) =>
