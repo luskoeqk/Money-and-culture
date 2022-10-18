@@ -18,41 +18,23 @@ import MenuItem from '@mui/material/MenuItem';
 
 
 const MuiDropDown = styled.div`
-
-
-
-    // padding: 9px;
-    // padding-left: 30px;
-    // padding-right: 30px;
-    // padding-bottom: 15px;
-
-
-    // &:hover {
-    //     transition: 0.25s;
-    //     border: 3px solid #d0d9db;  
-    // }
-
-
-    padding-top: 30px;
-
-    Button{
-        color: #d0d9db;
-        border: 3px solid transparent;  
-        width: 120px;
-        height: 65px;
-        border-radius: 15px;
-        top: -5px;
-
-        border: 3px solid #d0d9db;  
-        border-radius: 30px;
-        width: 200px;
-        // border: 3px solid transparent;
-        // border-radius: 15px;
     
 
+    Button{
+
+        color: #d0d9db;
+        border: 3px solid transparent;  
+        height: 69px;
+        border-radius: 30px;
+        width: 200px;
+        
+        top: 5px;
+
         &:hover{
-            // transition: 0.25s;
-            // border: 3px solid #d0d9db;   
+            border: 3px solid #d0d9db;  
+            border-radius: 30px;
+            transition: 0.2s;
+            width: 200px;
         }
     }
 
@@ -75,7 +57,7 @@ const Nav = styled.nav`
 `
 
 const H1 = styled.h3`
-justify-content: center;
+    justify-content: center;
 
     padding: 15px;
 
@@ -99,8 +81,13 @@ justify-content: center;
 `
 
 const LogoPik = styled.img`
+    padding-top: 35px;
     width: 15vw;
-
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    left: calc((100% - 15%) / 2);
+    z-index: 10;
 `
 
 const ForauthDiv = styled.div`
@@ -132,6 +119,8 @@ export const NavigationBar = () => {
         <>
             <Nav>
                 <div className={styles.main_menu}>
+                    <LogoPik src={logo} />
+
                     <div className={styles.inner_main_menu}>
                         <ul>
                             <li>
@@ -144,6 +133,7 @@ export const NavigationBar = () => {
                                     <H1>Начало</H1>
                                 </NavLink>
                             </li>
+
                             <li>
                                 <NavLink
                                     to="archive"
@@ -155,18 +145,15 @@ export const NavigationBar = () => {
                                 </NavLink>
                             </li>
 
-
                             <li>
-                                <div>
-                                    <NavLink
-                                        to="authors"
-                                        style={({ isActive }) =>
-                                            isActive ? activeStyle : undefined
-                                        }
-                                    >
-                                        <H1>Насоки за авторите</H1>
-                                    </NavLink>
-                                </ForauthDiv>
+                                <NavLink
+                                    to="authors"
+                                    style={({ isActive }) =>
+                                        isActive ? activeStyle : undefined
+                                    }
+                                >
+                                    <H1>Насоки за авторите</H1>
+                                </NavLink>
                             </li>
 
                             <li>
