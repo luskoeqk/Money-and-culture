@@ -90,12 +90,6 @@ const LogoPik = styled.img`
     z-index: 10;
 `
 
-const ForauthDiv = styled.div`
-    width: 180px;
-    margin-right: 50px;
-    margin-top: 40px;
-`
-
 
 export const NavigationBar = () => {
 

@@ -1,5 +1,8 @@
+
+// styles
 import './App.css';
 
+// react router dom
 import {
     BrowserRouter,
     Routes,
@@ -7,21 +10,22 @@ import {
 } from 'react-router-dom'
 
 
-import { Navbar } from './components/NavigationBar/Navbar';
+// components
+// import { Navbar } from './components/NavigationBar/Navbar';
 import { Footer } from './components/Footer/Footer';
+import { ScrollTop } from './components/ScrollTop';
+import { NavigationBar } from './components/NavigationBar2.0/NavigationBar';
 
 
+// pages
+import { Archive } from './pages/Archive';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { ForAuthors } from './pages/ForAuthors';
-import { Archive } from './pages/Archive';
-import { ScrollTop } from './components/ScrollTop';
 import { GeneralTerms } from './pages/GeneralTerms';
 import { Policy } from './pages/Policy';
-
 import { NotFound } from './pages/NotFound';
 import { EditorialBoardPage } from './pages/EditorialBoardPage';
-import { NavigationBar } from './components/NavigationBar2.0/NavigationBar';
 
 
 function App() {

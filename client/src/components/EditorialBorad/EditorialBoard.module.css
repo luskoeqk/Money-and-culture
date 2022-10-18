@@ -1,6 +1,7 @@
 .EditorialBoardWrapper {
     background-color: #d0d9db;
     padding: 10px;
+    color: #162123;
 }
 
 .EditorialBoard {
@@ -42,9 +43,9 @@ button:hover {
 
 }
 
-h1{
+/* h1{
     color: #162123
-}
+} */
 
 .EditorialBoardCardArticle:hover {
     background-color: #162123f3;
