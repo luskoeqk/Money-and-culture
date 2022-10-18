@@ -19,9 +19,7 @@ import MenuItem from '@mui/material/MenuItem';
 
 const MuiDropDown = styled.div`
     
-
     Button{
-
         color: #d0d9db;
         border: 3px solid transparent;  
         height: 69px;
@@ -52,6 +50,7 @@ const Nav = styled.nav`
         display: grid;
         height: auto;
         padding: 0px;
+        padding-bottom: 10px;
         margin: 0px;
     }
 `
@@ -82,12 +81,19 @@ const H1 = styled.h3`
 
 const LogoPik = styled.img`
     padding-top: 35px;
-    width: 15vw;
+    width: 300px;
     margin: 0 auto;
     display: block;
     position: absolute;
     left: calc((100% - 15%) / 2);
-    z-index: 10;
+    // z-index: 10;
+
+    @media screen and (max-width: 880px){
+        left: 0;
+        // margin: 0;
+        position: unset;
+           
+    }
 `
 
 
@@ -109,11 +115,14 @@ export const NavigationBar = () => {
         setAnchorEl(null);
     };
 
+
     return (
         <>
             <Nav>
                 <div className={styles.main_menu}>
-                    <LogoPik src={logo} />
+                    <Link to="/">
+                        <LogoPik src={logo} />
+                    </Link>
 
                     <div className={styles.inner_main_menu}>
                         <ul>
