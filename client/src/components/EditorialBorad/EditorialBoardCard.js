@@ -16,7 +16,7 @@ export const EditorialBoardCard = (
 
                     <div>
                         <img style={{
-                            width: '95%',
+                            width: '90%',
                             cursor: 'pointer',
                             justifyContent: 'center',
                             alignItems: 'center',
