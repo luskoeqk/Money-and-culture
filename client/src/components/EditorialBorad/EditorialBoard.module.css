@@ -12,10 +12,10 @@
 }
 
 .EditorialBoardCards {
-    /* padding: 20px; */
+    padding: 0px 200px 0px 200px;
     
-    padding-left: 200px;
-    padding-right: 200px;
+    /* padding-left: 200px; */
+    /* padding-right: 200px; */
     gap: 4.5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
