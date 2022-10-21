@@ -58,7 +58,7 @@ const Nav = styled.nav`
 const H1 = styled.h3`
     justify-content: center;
 
-    padding: 15px;
+    padding: 20px;
 
     border: 3px solid transparent;
     border-radius: 15px;
