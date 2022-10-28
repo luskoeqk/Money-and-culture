@@ -11,7 +11,7 @@
     padding: 35px;
 }
 
-.ContactUsIFrame{
+.ContactUsIFrame {
     /* width: 752px; */
     /* border: 3px solid #d0d9db; */
     /* box-shadow: 0 0 1px #d0d9db; */
@@ -24,20 +24,26 @@
 }
 
 
-.ContactUsContactInfo table {
-    padding: 20px;
+.ContactUsContactInfo table, tr, td {
+    /* padding: 20px; */
     color: #d0d9db;
-    border: 2px solid #d0d9db;
     width: auto;
     font-size: 26px;
-    border-radius: 30px;
     justify-content: center;
+    text-align: left;
+
+    /* border: 2px solid #d0d9db;
+    border-collapse: collapse;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 30px; */
     /* box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 red; */
 }
 
+
 .ContactUsContactInfo table:hover {
-    transition: 0.3s;
-    box-shadow: 0 0 10px #d0d9db;
+    /* transition: 0.3s; */
+    /* box-shadow: 0 0 10px #d0d9db; */
 }
 
 a {
@@ -69,13 +75,13 @@ a {
         width: 100%;
     }
 
-    .ContactUsContactInfo table {
+    .ContactUsContactInfo table,  tr, td {
         width: auto;
         font-size: 14px;
         border-radius: 30px;
         justify-content: center;
         /* box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 red; */
     }
-    
+
 
 }

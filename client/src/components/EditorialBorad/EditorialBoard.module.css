@@ -1,25 +1,20 @@
 .EditorialBoardWrapper {
     background-color: #d0d9db;
-    padding: 10px;
+    /* padding: 10px; */
     color: #162123;
+    width: auto;
 }
 
 .EditorialBoard {
-    justify-items: center;
-    padding: 50px;
-    padding-left: auto;
-    padding-right: auto;
+    margin: 100px;
+    padding: 10px;
 }
 
 .EditorialBoardCards {
-    padding: 0px 200px 0px 200px;
-    
-    /* padding-left: 200px; */
-    /* padding-right: 200px; */
+    /* padding: 0px 200px 0px 200px; */
     gap: 4.5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
     /* columns: 4; */
     /* gap: 100px; */
     /* margin: 30px; */
@@ -59,12 +54,10 @@ button:hover {
         display: block;
         padding: 0px;
     }
-
+    
     .EditorialBoard {
-        padding: auto;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
+        margin: 0px;
+        padding: 50px;
     }
 
     .EditorialBoardCard {
