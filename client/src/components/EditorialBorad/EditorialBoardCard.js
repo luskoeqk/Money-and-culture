@@ -1,6 +1,15 @@
 import React from 'react'
 
 import styles from './EditorialBoard.module.css'
+import styled from 'styled-components';
+
+const Image = styled.img`
+    width: 15vw;
+
+    @media all and (max-width: 880px){
+        width: 50vw;
+    }
+`
 
 export const EditorialBoardCard = (
     props
@@ -15,17 +24,9 @@ export const EditorialBoardCard = (
                 <article className={styles.EditorialBoardCardArticle}>
 
                     <div>
-                        <img style={{
-                            width: '90%',
-                            cursor: 'pointer',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            borderRadius: '25px 25px 0px 0px',
-                        }}
-                            src={props.picture} alt={props.title} />
+                        <Image src={props.picture} alt={props.title} />
                     </div>
-                    <div style={{
-                    }}>
+                    <div>
                         <h3>{props.title}</h3>
                     </div>
                 </article>

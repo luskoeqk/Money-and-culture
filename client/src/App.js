@@ -28,12 +28,16 @@ import { NotFound } from './pages/NotFound';
 import { EditorialBoardPage } from './pages/EditorialBoardPage';
 
 
+
+import { ScrollButton } from './utilities/ScrollButton';
+
+
 function App() {
     return (
-        
-        <div className="App">
 
+        <div className="App">
             <BrowserRouter>
+                <ScrollButton />
                 {/* <Navbar /> */}
                 <NavigationBar />
                 <Routes>

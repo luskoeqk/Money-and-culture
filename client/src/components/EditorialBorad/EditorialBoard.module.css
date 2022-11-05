@@ -30,8 +30,8 @@ button:hover {
 .EditorialBoardCardArticle {
     background-color: #162123;
     color: #d0d9db;
-    width: 100%;
-    height: 55vh;
+    width: auto;
+    height: 50vh;
     text-align: center;
     border: 19px solid #162123;
     border-radius: 15px;
@@ -68,5 +68,6 @@ button:hover {
         margin-bottom: 20px;
         border: 10px solid #162123;
         height: auto;
+        width: auto; 
     }
 }
