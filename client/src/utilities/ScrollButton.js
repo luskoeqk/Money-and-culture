@@ -22,8 +22,7 @@ export const ScrollButton = () => {
     return (
         <div className={showGoTop ? '' : styles.goTopHidden} onClick={handleScrollUp}>
             <button type={'button'} className={styles.goTop}>
-                ↑
-                <span className={styles.goTopIcon}></span>
+                <span className={styles.goTopIcon}>↑</span>
             </button>
         </div>
     )
