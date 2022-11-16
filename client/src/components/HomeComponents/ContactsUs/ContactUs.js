@@ -23,17 +23,12 @@ export const ContactUs = () => {
                 </div>
                 <div className={styles.ContactUsContactInfo}>
                     <h1><strong>КОНТАКТИ</strong></h1>
-                    {/* <ul>
-                        <li>София 1618 <br /> ул. „Гусла No1 (кв. „Овча Купел”) <br /> Висше училище по застраховане и финанси <br /> ст. 405</li>
-                        <li>00359 2 40 80 15</li>
-                        <li><a href="mailto:pariikultura@vuzf.bg?">pariikultura@vuzf.bg</a></li>
-                    </ul> */}
 
                     <table>
                         <tbody>
                             <tr>
                                 <td>
-                                    <AdrSvg width="70px"/>
+                                    <AdrSvg width="70px" />
                                 </td>
                                 <td>
                                     София 1618 ул. „Гусла No1 (кв. „Овча Купел”) Висше училище по застраховане и финанси ст. 405
@@ -41,13 +36,13 @@ export const ContactUs = () => {
                             </tr>
                             <tr>
                                 <td>
-                                    <PhoneSvg width="70px"/>
+                                    <PhoneSvg width="70px" />
                                 </td>
                                 <td>00359 2 40 80 15</td>
                             </tr>
                             <tr>
                                 <td>
-                                    <MailSvg width="70px"/>
+                                    <MailSvg width="70px" />
                                 </td>
                                 <td>
                                     <a href="mailto:pariikultura@vuzf.bg?">pariikultura@vuzf.bg</a>
