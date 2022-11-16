@@ -1,8 +1,13 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 
+// svg
+import { ReactComponent as AdrSvg } from '../../../assets/svg/location.svg'
+import { ReactComponent as PhoneSvg } from '../../../assets/svg/phone.svg'
+import { ReactComponent as MailSvg } from '../../../assets/svg/mail.svg'
+
+// styles
 import styles from './ContactUs.module.css'
 
-// import addresss from '../../../assets/svg/address.svg'
 
 export const ContactUs = () => {
     return (
@@ -28,9 +33,7 @@ export const ContactUs = () => {
                         <tbody>
                             <tr>
                                 <td>
-                                    <div>
-                                        <img src={require('../../../assets/svg/location.svg').default} alt="my" />
-                                    </div>
+                                    <AdrSvg width="70px"/>
                                 </td>
                                 <td>
                                     София 1618 ул. „Гусла No1 (кв. „Овча Купел”) Висше училище по застраховане и финанси ст. 405
@@ -38,15 +41,13 @@ export const ContactUs = () => {
                             </tr>
                             <tr>
                                 <td>
-                                    <div>
-                                        <img src={require('../../../assets/svg/phone.svg').default} alt="my" />
-                                    </div>
+                                    <PhoneSvg width="70px"/>
                                 </td>
                                 <td>00359 2 40 80 15</td>
                             </tr>
                             <tr>
                                 <td>
-                                    asd
+                                    <MailSvg width="70px"/>
                                 </td>
                                 <td>
                                     <a href="mailto:pariikultura@vuzf.bg?">pariikultura@vuzf.bg</a>
@@ -55,7 +56,6 @@ export const ContactUs = () => {
                         </tbody>
                     </table>
                 </div>
-
             </div>
         </div>
     )
