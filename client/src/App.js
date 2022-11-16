@@ -9,7 +9,7 @@ import {
     Route
 } from 'react-router-dom'
 
-// test
+
 // components
 // import { Navbar } from './components/NavigationBar/Navbar';
 import { Footer } from './components/Footer/Footer';
