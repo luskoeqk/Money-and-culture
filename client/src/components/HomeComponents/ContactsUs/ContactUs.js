@@ -28,17 +28,29 @@ export const ContactUs = () => {
                         <tbody>
                             <tr>
                                 <td>
-                                    adr icon
+                                    <div>
+                                        <img src={require('../../../assets/svg/location.svg').default} alt="my" />
+                                    </div>
                                 </td>
-                                <td>София 1618 ул. „Гусла No1 (кв. „Овча Купел”) Висше училище по застраховане и финанси ст. 405</td>
+                                <td>
+                                    София 1618 ул. „Гусла No1 (кв. „Овча Купел”) Висше училище по застраховане и финанси ст. 405
+                                </td>
                             </tr>
                             <tr>
-                                <td>phone icon</td>
+                                <td>
+                                    <div>
+                                        <img src={require('../../../assets/svg/phone.svg').default} alt="my" />
+                                    </div>
+                                </td>
                                 <td>00359 2 40 80 15</td>
                             </tr>
                             <tr>
-                                <td>email icon</td>
-                                <td><a href="mailto:pariikultura@vuzf.bg?">pariikultura@vuzf.bg</a></td>
+                                <td>
+                                    asd
+                                </td>
+                                <td>
+                                    <a href="mailto:pariikultura@vuzf.bg?">pariikultura@vuzf.bg</a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
