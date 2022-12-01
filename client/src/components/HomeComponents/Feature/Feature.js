@@ -1,14 +1,12 @@
 import React from 'react'
 
 import {
-    Image,
     Logo,
     Paragraph,
     Button,
     Wrapper
 } from './FeatureElements'
 
-import img from '../../../assets/Feature-Images/pk1.png'
 import logo from '../../../assets/logo/pklogo.png'
 
 import { Link } from 'react-router-dom'
@@ -18,9 +16,22 @@ export const Feature = () => {
 
     return (
         <>
-            <Wrapper>
+            {/* old */}
+            {/* <Wrapper>
 
                 <Image src={img} alt="" />
+
+                <Logo src={logo} alt="" />
+
+
+                <Link to='about'>
+                    <Button>Научи повече</Button>
+                </Link>
+
+            </Wrapper> */}
+
+            {/* remake */}
+            <Wrapper>
 
                 <Logo src={logo} alt="" />
 
@@ -29,9 +40,7 @@ export const Feature = () => {
                 <Link to='about'>
                     <Button>Научи повече</Button>
                 </Link>
-
             </Wrapper>
-
         </>
     )
 }
