@@ -1,4 +1,5 @@
 // react
+import { useState } from 'react';
 import * as React from 'react';
 
 // styles
@@ -96,6 +97,20 @@ const LogoPik = styled.img`
     }
 `
 
+const LangButton = styled.button`
+
+    width: 3vw;
+    height: 3vh;
+
+    font-size: 1vw;
+
+    background-color: #d0d9db;
+    color: #162123;
+    box-shadow: 0px 0px 5px 5px #162123;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+`
 
 export const NavigationBar = () => {
 
@@ -103,6 +118,15 @@ export const NavigationBar = () => {
     let activeStyle = {
         color: "#878787",
         borderColor: "green"
+    };
+
+    const [lang, setLang] = useState('BG');
+    const changeLanguage = () => {
+        if (lang === "BG") {
+            setLang("EN");
+        } else if (lang === "EN") {
+            setLang("BG");
+        }
     };
 
     //mui
@@ -120,11 +144,14 @@ export const NavigationBar = () => {
         <>
             <Nav>
                 <div className={styles.main_menu}>
+                    <LangButton onClick={changeLanguage}>{lang}</LangButton>
+
                     <Link to="/">
                         <LogoPik src={logo} />
                     </Link>
 
                     <div className={styles.inner_main_menu}>
+
                         <ul>
                             <li>
                                 <NavLink
@@ -208,6 +235,7 @@ export const NavigationBar = () => {
                                     </Menu>
                                 </MuiDropDown>
                                 {/* mui */}
+
                             </li>
                         </ul>
                     </div>
@@ -216,3 +244,4 @@ export const NavigationBar = () => {
         </>
     )
 }
+

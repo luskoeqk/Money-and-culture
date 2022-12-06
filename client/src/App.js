@@ -15,6 +15,7 @@ import {
 import { Footer } from './components/Footer/Footer';
 import { ScrollTop } from './components/ScrollTop';
 import { NavigationBar } from './components/NavigationBar2.0/NavigationBar';
+import { ScrollButton } from './utilities/ScrollButton';
 
 
 // pages
@@ -28,14 +29,9 @@ import { NotFound } from './pages/NotFound';
 import { EditorialBoardPage } from './pages/EditorialBoardPage';
 
 
-
-import { ScrollButton } from './utilities/ScrollButton';
-
-
 function App() {
     return (
 
-        // test new branch
         <div className="App">
             <BrowserRouter>
                 <ScrollButton />
