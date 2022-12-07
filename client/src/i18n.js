@@ -12,14 +12,19 @@ i18n
         },
         fallbackLng: "bg",
         debug: false,
-        ns: ["navbar", "feature"],
+        ns: [
+            "navbar",
+            "feature",
+            "latest_edition",
+            "contact_us"
+        ],
 
         interpolation: {
             espaceValue: false,
             formatSeparator: ",",
         },
         react: {
-            wait: true,            
+            wait: true,
         },
     });
 
