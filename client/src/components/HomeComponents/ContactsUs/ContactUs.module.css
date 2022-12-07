@@ -24,8 +24,10 @@
     color: #d0d9db;
     width: auto;
     font-size: 26px;
-    justify-content: center;
-    text-align: left;
+    /* justify-content: center; */
+    /* text-align: left; */
+    /* display: inline-block; */
+    vertical-align: auto;
 
     /* border: 2px solid #d0d9db;
     border-collapse: collapse;
