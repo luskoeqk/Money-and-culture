@@ -1,5 +1,5 @@
 /* * {
-    border: 1px solid red;
+    border: 0.5px solid red;
 } */
 
 .main_menu {
@@ -48,6 +48,16 @@
     float: center;
 }
 
+.LaguageDiv{
+    color: #878787;
+    font-weight: bold;
+    font-size: 1.5vw;
+
+    padding-right: 10px;
+    position: absolute;
+    top: 65px;
+    right: 0;
+}
 
 
 @media screen and (max-width: 880px) {

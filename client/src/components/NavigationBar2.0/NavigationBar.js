@@ -97,19 +97,24 @@ const LogoPik = styled.img`
     }
 `
 
-const LangButton = styled.button`
-
-    width: 3vw;
-    height: 3vh;
-
+const LangButtonEN = styled.button`
+    background-color: transparent;
+    border: none;
+    color: #878787;
+    cursor: pointer;
     font-size: 1vw;
 
-    background-color: #d0d9db;
-    color: #162123;
-    box-shadow: 0px 0px 5px 5px #162123;
-    border-radius: 10px;
+    &:hover { background-color: transparent; }
+`
+
+const LangButtonBG = styled.button`
+    background-color: transparent;
+    border: none;
+    color: #878787;
     cursor: pointer;
-    text-align: center;
+    font-size: 1vw;
+
+    &:hover { background-color: transparent; }
 `
 
 export const NavigationBar = () => {
@@ -117,16 +122,18 @@ export const NavigationBar = () => {
 
     let activeStyle = {
         color: "#878787",
-        borderColor: "green"
     };
 
+    // laguage switching
     const [lang, setLang] = useState('BG');
-    const changeLanguage = () => {
-        if (lang === "BG") {
-            setLang("EN");
-        } else if (lang === "EN") {
-            setLang("BG");
-        }
+    const changeLanguageBG = () => {
+        console.log(lang);
+        console.log("BG clicked");
+    };
+
+    const changeLanguageEN = () => {
+        console.log(lang);
+        console.log("EN clicked");
     };
 
     //mui
@@ -144,7 +151,9 @@ export const NavigationBar = () => {
         <>
             <Nav>
                 <div className={styles.main_menu}>
-                    <LangButton onClick={changeLanguage}>{lang}</LangButton>
+                    <div className={styles.LaguageDiv}>
+                        <LangButtonBG onClick={changeLanguageBG}>BG</LangButtonBG>  |  <LangButtonEN onClick={changeLanguageEN}>EN</LangButtonEN>
+                    </div>
 
                     <Link to="/">
                         <LogoPik src={logo} />
