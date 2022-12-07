@@ -17,6 +17,10 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
+// i18next
+import i18n from "i18next";
+import { useTranslation } from "react-i18next";
+
 
 const MuiDropDown = styled.div`
     
@@ -105,6 +109,10 @@ const LangButtonEN = styled.button`
     font-size: 1vw;
 
     &:hover { background-color: transparent; }
+    
+    @media screen and (max-width: 880px){
+        font-size: 5vw;
+    }
 `
 
 const LangButtonBG = styled.button`
@@ -115,6 +123,10 @@ const LangButtonBG = styled.button`
     font-size: 1vw;
 
     &:hover { background-color: transparent; }
+
+    @media screen and (max-width: 880px){
+        font-size: 5vw;
+    }
 `
 
 export const NavigationBar = () => {
@@ -125,16 +137,22 @@ export const NavigationBar = () => {
     };
 
     // laguage switching
-    const [lang, setLang] = useState('BG');
+    const [lang, setLang] = useState('en');
     const changeLanguageBG = () => {
-        console.log(lang);
-        console.log("BG clicked");
+
+        setLang("bg");
+        i18n.changeLanguage(lang);
+        
     };
 
     const changeLanguageEN = () => {
-        console.log(lang);
-        console.log("EN clicked");
+        
+        setLang("en");
+        i18n.changeLanguage(lang);
+
     };
+
+    const { t } = useTranslation(["navbar"]);
 
     //mui
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -169,7 +187,7 @@ export const NavigationBar = () => {
                                         isActive ? activeStyle : undefined
                                     }
                                 >
-                                    <H1>Начало</H1>
+                                    <H1>{t('home')}</H1>
                                 </NavLink>
                             </li>
 
@@ -180,7 +198,7 @@ export const NavigationBar = () => {
                                         isActive ? activeStyle : undefined
                                     }
                                 >
-                                    <H1>Архив</H1>
+                                    <H1>{t('archive')}</H1>
                                 </NavLink>
                             </li>
 
@@ -191,7 +209,7 @@ export const NavigationBar = () => {
                                         isActive ? activeStyle : undefined
                                     }
                                 >
-                                    <H1>Насоки за авторите</H1>
+                                    <H1>{t('guidelines for authors')}</H1>
                                 </NavLink>
                             </li>
 
@@ -201,7 +219,6 @@ export const NavigationBar = () => {
                                     <Button
                                         style={{
                                             textTransform: 'none',
-                                            // color: "#d0d9db",
                                             fontSize: '26px',
                                             padding: '0px',
                                             fontWeight: 'bold',
@@ -214,7 +231,7 @@ export const NavigationBar = () => {
                                         aria-expanded={open ? 'true' : undefined}
                                         onClick={handleClick}
                                     >
-                                        Още</Button>
+                                        {t('more')}</Button>
 
                                     <Menu
                                         id="basic-menu"
@@ -231,7 +248,7 @@ export const NavigationBar = () => {
                                                 style={{
                                                     color: "black",
                                                 }}
-                                                onClick={handleClose}>За списанието</MenuItem>
+                                                onClick={handleClose}>{t('for the magazine')}</MenuItem>
                                         </Link>
 
                                         <Link to="/editorialboard">
@@ -239,7 +256,7 @@ export const NavigationBar = () => {
                                                 style={{
                                                     color: "black",
                                                 }}
-                                                onClick={handleClose}>Редакторски колектив</MenuItem>
+                                                onClick={handleClose}>{t('editorial staff')}</MenuItem>
                                         </Link>
                                     </Menu>
                                 </MuiDropDown>

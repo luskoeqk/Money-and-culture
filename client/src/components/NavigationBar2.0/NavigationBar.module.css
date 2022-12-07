@@ -94,5 +94,9 @@
         float: none;
         padding-top: 0px;
     }
-    
+ 
+    .LaguageDiv{
+        font-size: 7vw;
+        top: 10px;
+    }
 }
