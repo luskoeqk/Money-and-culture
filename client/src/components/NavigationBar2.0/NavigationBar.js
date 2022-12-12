@@ -137,19 +137,11 @@ export const NavigationBar = () => {
     };
 
     // laguage switching
-    const [lang, setLang] = useState('en');
-    const changeLanguageBG = () => {
-
-        setLang("bg");
+    const [lang, setLang] = useState("en");
+    const handleLang = lang => event => {
+        setLang(lang);
+        console.log(lang);
         i18n.changeLanguage(lang);
-        
-    };
-
-    const changeLanguageEN = () => {
-        
-        setLang("en");
-        i18n.changeLanguage(lang);
-
     };
 
     const { t } = useTranslation(["navbar"]);
@@ -170,7 +162,7 @@ export const NavigationBar = () => {
             <Nav>
                 <div className={styles.main_menu}>
                     <div className={styles.LaguageDiv}>
-                        <LangButtonBG onClick={changeLanguageBG}>BG</LangButtonBG>  |  <LangButtonEN onClick={changeLanguageEN}>EN</LangButtonEN>
+                        <LangButtonBG onClick={handleLang("bg")}>BG</LangButtonBG>  |  <LangButtonEN onClick={handleLang("en")}>EN</LangButtonEN>
                     </div>
 
                     <Link to="/">
