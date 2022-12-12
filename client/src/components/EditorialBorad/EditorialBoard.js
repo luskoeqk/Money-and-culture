@@ -2,6 +2,8 @@
 import styles from "./EditorialBoard.module.css"
 import { EditorialBoardCard } from './EditorialBoardCard'
 
+import { useTranslation } from "react-i18next";
+
 import grigorij_vaozv from '../../assets/EditorialBoardImages/editor1.jpg'
 import grigor_dimitrov from '../../assets/EditorialBoardImages/grigor_dimitrov.jpg'
 import rumen_trifonov from '../../assets/EditorialBoardImages/rumen_trifonov.jpg'
@@ -190,11 +192,15 @@ const editors = [
 ]
 
 export const EditorialBoard = () => {
+
+    const { t } = useTranslation(["editorial_team"]);
+
+
     return (
 
         <div className={styles.EditorialBoardWrapper}>
             <br />
-            <h1>РЕДАКТОРСКИ КОЛЕКТИВ</h1>
+            <h1>{t('editorial team')}</h1>
 
             <div className={styles.EditorialBoard}>
                 <div className={styles.EditorialBoardCards}>

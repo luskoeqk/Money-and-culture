@@ -70,8 +70,8 @@ export const ArchiveComponent = () => {
 
                 <div className={styles.ArchiveComponentCards}>
                     <iframe src="https://drive.google.com/file/d/12GIPAonrv6o6W3haDxZr-d2WI5GAu_92/preview" width="440" height="610" allow="autoplay"></iframe>
-                    <h2>Lorem Ipsum</h2>
-                    <StyledH4>23.06.2022</StyledH4>
+                    <h2>1/2022</h2>
+                    <StyledH4>дата</StyledH4>
                 </div>
                 <div className={styles.ArchiveComponentCards}>
                     <iframe src="https://drive.google.com/file/d/1zvlZrUXtojV1I4si-Tu-TJSk5Q7jl8oC/preview" width="440" height="610" allow="autoplay"></iframe>
@@ -81,19 +81,19 @@ export const ArchiveComponent = () => {
                 </div>
                 <div className={styles.ArchiveComponentCards}>
                     <iframe src="https://drive.google.com/file/d/1yF8rRXN4fzjz2JaTss--QxApDWcYXaWw/preview" width="440" height="610" allow="autoplay"></iframe>
-                    <h2>Lorem Ipsum</h2>
+                    <h2>3/2021</h2>
                     <StyledH4>дата</StyledH4>
 
                 </div>
                 <div className={styles.ArchiveComponentCards}>
                     <iframe src="https://drive.google.com/file/d/1dOy92YBg5lcBLBQXYy60EwHvmrpKaX6x/preview" width="440" height="610" allow="autoplay"></iframe>
-                    <h2>Згалавие</h2>
+                    <h2>2/2020</h2>
                     <StyledH4>дата</StyledH4>
 
                 </div>
                 <div className={styles.ArchiveComponentCards}>
                     <iframe src="https://drive.google.com/file/d/1WoHtVmZQEwU1zI8zTCV0BSADjicIZ18v/preview" width="440" height="610" allow="autoplay"></iframe>
-                    <h2>Згалавие</h2>
+                    <h2>1/2020</h2>
                     <StyledH4>дата</StyledH4>
 
                 </div>

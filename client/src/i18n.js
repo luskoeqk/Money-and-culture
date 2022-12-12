@@ -16,7 +16,9 @@ i18n
             "navbar",
             "feature",
             "latest_edition",
-            "contact_us"
+            "contact_us",
+            "editorial_team",
+            "for_authors",
         ],
 
         interpolation: {
