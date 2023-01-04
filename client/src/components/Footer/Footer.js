@@ -1,6 +1,6 @@
 // images
 import logo from '../../assets/logo/pklogo.png'
-import logo2 from '../../assets/logo/pklogo-copy.png'
+import logo2 from '../../assets/logo/pklogo.png'
 import logoVUZF from '../../assets/logo/vuzflogo.png'
 
 // styles

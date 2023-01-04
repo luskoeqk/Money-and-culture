@@ -8,7 +8,7 @@ import styled from 'styled-components';
 
 // images
 import logo from '../../assets/logo/pklogo.png'
-import logo2 from '../../assets/logo/pklogo-copy.png'
+import logo2 from '../../assets/logo/pklogo.png'
 
 // react router dom
 import { NavLink, Link } from 'react-router-dom'
