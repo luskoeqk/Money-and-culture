@@ -137,22 +137,8 @@ export const NavigationBar = () => {
         color: "#878787",
     };
 
-    // laguage switching
-    // const [lang, setLang] = useState({
-    //     activeLang: 'en',
-    //     languages: [
-    //         {
-    //             lan1: 'en',
-    //             selected: true
-    //         },
-    //         {
-    //             lan2: 'bg',
-    //             selected: false
-    //         }
-    //     ]
-    // });
+    // language switching
     const [lang, setLang] = useState("en")
-
 
     const handleLang = lang => event => {
 
