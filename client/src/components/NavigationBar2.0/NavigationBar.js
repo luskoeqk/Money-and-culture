@@ -8,6 +8,7 @@ import styled from 'styled-components';
 
 // images
 import logo from '../../assets/logo/pklogo.png'
+import logo2 from '../../assets/logo/pklogo-copy.png'
 
 // react router dom
 import { NavLink, Link } from 'react-router-dom'
@@ -137,19 +138,21 @@ export const NavigationBar = () => {
     };
 
     // laguage switching
-    const [lang, setLang] = useState({
-        activeLang: 'en',
-        languages: [
-            {
-                lan1: 'en',
-                selected: true
-            },
-            {
-                lan2: 'bg',
-                selected: false
-            }
-        ]
-    });
+    // const [lang, setLang] = useState({
+    //     activeLang: 'en',
+    //     languages: [
+    //         {
+    //             lan1: 'en',
+    //             selected: true
+    //         },
+    //         {
+    //             lan2: 'bg',
+    //             selected: false
+    //         }
+    //     ]
+    // });
+    const [lang, setLang] = useState("en")
+
 
     const handleLang = lang => event => {
 
@@ -159,7 +162,7 @@ export const NavigationBar = () => {
 
     const { t } = useTranslation(["navbar"]);
 
-    
+
     //mui
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
@@ -178,15 +181,23 @@ export const NavigationBar = () => {
                     <div className={styles.LaguageDiv}>
                         <LangButtonBG
                             onClick={handleLang("bg")}
+                            style={{
+                                textShadow: lang === "bg" && '0 0 20px #d0d9db',
+                                color: lang === "bg" && '#d0d9db'
+                            }}
                         >BG</LangButtonBG>
                         |
                         <LangButtonEN
                             onClick={handleLang("en")}
+                            style={{
+                                textShadow: lang === "en" && '0 0 20px #d0d9db',
+                                color: lang === "en" && '#d0d9db'
+                            }}
                         >EN</LangButtonEN>
                     </div>
 
                     <Link to="/">
-                        <LogoPik src={logo} />
+                        <LogoPik src={lang === "bg" ? logo : logo2} alt="" />
                     </Link>
 
                     <div className={styles.inner_main_menu}>

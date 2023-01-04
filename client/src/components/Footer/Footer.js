@@ -1,14 +1,19 @@
-
-import logoPik from '../../assets/logo/pklogo.png'
+// images
+import logo from '../../assets/logo/pklogo.png'
+import logo2 from '../../assets/logo/pklogo-copy.png'
 import logoVUZF from '../../assets/logo/vuzflogo.png'
 
+// styles
 import styles from './Footer.module.css'
 import styled from 'styled-components'
 
 import { Link } from 'react-router-dom'
 
+// i18next
+import i18n from "i18next";
 import { useTranslation } from "react-i18next";
 
+console.log(i18n.language)
 
 const StyledHr = styled.hr`
     border-top: 4px solid #d0d9db;
@@ -68,7 +73,7 @@ export const Footer = () => {
                 <br />
                 <div className={styles.FooterPikLogo}>
                     <Link to="/">
-                        <StyledImgPik src={logoPik} alt="" />
+                        <StyledImgPik src={i18n.language === "en" ? logo2 : logo} alt="" />
                     </Link>
                 </div>
                 <div className={styles.FooterLinks}>

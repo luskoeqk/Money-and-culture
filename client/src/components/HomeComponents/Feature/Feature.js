@@ -8,9 +8,13 @@ import {
     Wrapper
 } from './FeatureElements'
 
+// images
 import logo from '../../../assets/logo/pklogo.png'
+import logo2 from '../../../assets/logo/pklogo-copy.png'
 
+// i18next
 import { useTranslation } from "react-i18next";
+import i18n from 'i18next';
 
 
 export const Feature = () => {
@@ -22,7 +26,7 @@ export const Feature = () => {
         <>
             <Wrapper>
 
-                <Logo src={logo} alt="" />
+                <Logo src={i18n.language === "en" ? logo2 : logo} alt="" />
 
                 <Paragraph>{t('par')}</Paragraph>
 
