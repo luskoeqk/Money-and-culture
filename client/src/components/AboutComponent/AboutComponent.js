@@ -1,10 +1,16 @@
 
 import styles from './AboutComponent.module.css'
 
+import { useTranslation } from "react-i18next";
+
 export const AboutComponent = () => {
+
+    const { t } = useTranslation(["about"]);
+
+
     return (
         <div className={styles.AboutComponentWrapper}>
-            <h1><strong>ЗА СПИСАНИЕТО</strong></h1>
+            <h1><strong>{t('page_title')}</strong></h1>
 
             <p>Няма друг начин да сработиш две понятия, които са белязали пътя на човешката цивилизация, освен диалога.</p>
             <p>Културата и парите са достатъчно ярки, за да живеят самостоятелно. И самодостатъчно.</p>

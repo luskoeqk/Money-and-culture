@@ -19,6 +19,7 @@ i18n
             "contact_us",
             "editorial_team",
             "for_authors",
+            "about",
         ],
 
         interpolation: {

@@ -31,6 +31,7 @@ import { EditorialBoardPage } from './pages/EditorialBoardPage';
 
 
 // i18next, language switching
+// eslint-disable-next-line
 import i18n from "./i18n";
 
 

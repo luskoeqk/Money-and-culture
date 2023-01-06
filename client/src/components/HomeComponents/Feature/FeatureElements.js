@@ -11,9 +11,9 @@ export const Image = styled.img`
 export const Wrapper = styled.div`
         background-image: url(${img});
 
-        background-size: cover;
+        background-size: 100vw;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        // background-attachment: fixed;
         background-position: center;
 
 

@@ -61,7 +61,7 @@ export const LatestEdition = () => {
             <div className={styles.LatestEditionInfo}>
                 <div className={styles.HeaderAndSubheader}>
                     <h1><strong>{t('heading')}</strong></h1>
-                    <h2><i>Брой 1/2022</i></h2>
+                    <h2><i>{t('issue')} 1/2022</i></h2>
                 </div>
                 <div className={styles.Description}>
                     <StyledPar>{t('par1')}</StyledPar>
