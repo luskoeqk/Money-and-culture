@@ -20,5 +20,11 @@
     "shShpar5": "The main conclusions of the work can be presented in a short conclusion section.",
     "subSubHeading6": "Applications",
     "shShpar6": "If the work contains more than one appendix, identify them as A, B, etc. Formulas and equations in the appendices should be given with separate numbering: Eq. (A.1), equation (A.2), etc.; in the following appendix, equation (B.1), etc.",
-    "subHeading4": ""    
+    "subHeading4": "BASIC INFORMATION FOR HOME PAGE",
+    "sh4par1": "Title. Titles must be informative to be used in information retrieval systems. Avoid abbreviations and formulas whenever possible.",
+    "sh4par2": "Summary. The abstract should briefly state the purpose of the study, the main results and the main conclusions.",
+    "sh4par3": "Keywords. Immediately after the abstract, list a maximum of 6 keywords.",
+    "sh4par4": "Acknowledgments. place the acknowledgments in a separate section at the end of the article before the references.",
+    "sh4par5": "Footnotes. Number them consecutively throughout the article using superscript Arabic numerals. Indicate each footnote in a table with a superscript lowercase letter.",
+    "sh4par6": "Please use Times New Romans font only, use good quality images."
 }
